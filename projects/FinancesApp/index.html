@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finances Manager</title>
-<link rel="stylesheet" href="/css/styles.css">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finances Manager</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-    <header>
+  <header>
 
-        <nav>
-            <ul class="left hide-on-med-and-down">
-                <li class="active"><a href="/index.html">HOME </a></li>
-                <li class="active"><a href="/about_me.html">ABOUT ME</a></li>
-                <li class="active"><a href="/contact_me.html">CONTACT</a></li>
-                <li class="active"><a href="/portifolio.html">PORTIFOLIO</a></li>
-            </ul>
-            </div>
+    <nav>
+      <ul class="left hide-on-med-and-down">
+        <li class="active"><a href="/index.html">HOME </a></li>
+        <li class="active"><a href="/about_me.html">ABOUT ME</a></li>
+        <li class="active"><a href="/contact_me.html">CONTACT</a></li>
+        <li class="active"><a href="/portifolio.html">PORTIFOLIO</a></li>
+      </ul>
+      </div>
 
-            <!-- mobile
+      <!-- mobile
 
             <ul class="sidenav" id="mobile-demo">
                 <li><a href="index.html">HOME </a></li>
@@ -32,54 +36,59 @@
                 <li><a href="portifolio.html">PORTIFOLIO</a></li>
             </ul> -->
 
-        </nav>
+    </nav>
 
-    </header>
-    <main>
-        <section id="projects">
-<div class="containerManager">
-  <h1>Finances Manager</h1>
-  <form id="debtForm">
-    <input type="text" id="creditor" placeholder="Creditor" required>
-    <input type="number" id="balance" placeholder="Balance" required>
-    <input type="number" id="minimumPayment" placeholder="Minimum Payment" required>
-    <input type="number" id="interestRate" placeholder="Interest Rate (%)" required>
-    <button type="submit">Add to Table</button>
-  </form>
-  <table id="debtTable">
-    <thead>
-      <tr>
-        <th>Creditor</th>
-        <th>Balance</th>
-        <th>Minimum Payment</th>
-        <th>Interest Rate (%)</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Table rows will be added here -->
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="4">Total Balance:</td>
-        <td id="totalBalance">0</td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
-</section>
-</main>
-<footer>
+  </header>
+  <main>
+    <h1>Finances Manager</h1>
+
+    <div class=" container " id="projects">
+      <form id=" debtForm">
+        <input type="text" id="creditor" placeholder="Creditor" required>
+        <input type="number" id="balance" placeholder="Balance" required>
+        <input type="number" id="minimumPayment" placeholder="Minimum Payment" required>
+        <input type="number" id="interestRate" placeholder="Interest Rate (%)" required>
+        <br>
+        <br>
+        <button class="btn btn-outline-primary" type="submit">Add to Table</button>
+        </form>
+        <table id="debtTable">
+          <thead>
+            <tr>
+              <th>Creditor</th>
+              <th>Balance</th>
+              <th>Minimum Payment</th>
+              <th>Interest Rate (%)</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows will be added here -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Total Balance:</td>
+              <td id="totalBalance">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+        
+
+  </main>
+  <footer>
     <h5>GET IN TOUCH</h5>
     <a href="https://twitter.com/alexafernands/" class="fa fa-twitter"></a>
     <a href="https://www.linkedin.com/in/alex-fernandes-5850b535/" class="fa fa-linkedin"></a>
     <a href="https://www.instagram.com/aafernands/" class="fa fa-instagram"></a>
     <a href="https://github.com/aafernands/" class="fa fa-github"></a>
     <p><span class="credits-footer">© 2024 Website Designed by <a
-                href="https://twitter.com/alexafernands">AlexFernandes</a></span></p>
-</footer>
-<script src="script.js"></script>
+          href="https://twitter.com/alexafernands">AlexFernandes</a></span></p>
+  </footer>
+  <script src="script.js"></script>
 
 
 </body>
+
 </html>

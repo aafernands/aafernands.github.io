@@ -1,10 +1,101 @@
+
 body {
-    background-color: rgb(255, 255, 255);
-}
-.containerManager{
-        padding: 20 20 20 20;
-        margin-bottom: 20px;
-        background-color: rgba(94, 94, 94, 0.2);
-        border-radius: 10px;
-    
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(94, 94, 94, 0.2);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    color: #5D647B;
+    text-align: center;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  td {
+    font-size: 14px;
+  }
+  
+  tfoot td {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button.edit, button.save {
+    background-color: #FFC107;
+    color: #fff;
+  }
+  
+  button.delete {
+    background-color: #F44336;
+    color: #fff;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    table, th, td {
+      font-size: 12px;
+    }
+  
+    button {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      padding: 8px;
+    }
+  
+    button {
+      padding: 4px 8px;
+    }
+  }
+  
