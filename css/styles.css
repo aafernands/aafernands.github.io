@@ -17,7 +17,7 @@ img {
 	flex: 1;
 	max-width: 100%; /* You can adjust this value according to your needs */
 	height: auto; /* This ensures the image maintains its aspect ratio */
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 .intro {
