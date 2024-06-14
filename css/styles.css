@@ -118,7 +118,7 @@ footer {
 .credits-footer {
 	font-size: 10px;
 	font-family: "Raleway", sans-serif;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	text-align: center;
 	text-decoration: none;
 	padding: 0px;
@@ -130,4 +130,8 @@ footer {
 .section {
 	width: 80%; /* adjust width as needed */
 	margin: 0 auto; /* to center the section */
+}
+
+h5 {
+    font-size: 15px !important;
 }
