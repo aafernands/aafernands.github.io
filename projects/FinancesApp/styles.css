@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.containerManager{
+        padding: 10 10 20 20px;
+        margin-bottom: 0.5rem;
+        background-color: rgba(94, 94, 94, 0.2);
+        border-radius: 10px;
+    
+}
