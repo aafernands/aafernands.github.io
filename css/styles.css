@@ -1,0 +1,96 @@
+body, html {
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    
+  }
+
+  
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section#intro {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+/*_____________________footer_____*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem 0;
+    }
+
+    .fa {
+      padding: 0;
+      font-size: 15px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0px;
+      color: white;
+    }
+    
+    .fa:hover {
+      text-decoration: none;
+      color: #1a237e;
+    }
+    
+    .fa-github {
+      color: white;
+    }
+    
+    .fa-twitter {
+      color: white;
+      margin: 0;
+    }
+    
+    .fa-linkedin {
+      color: white;
+      margin: 0;
+    }
+    
+    .fa-instagram {
+      color: white;
+      margin: 0;
+    }
+    
+    .credits-footer {
+      font-size: 10px;
+      font-family: "Raleway", sans-serif;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      text-decoration: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    /*__________________________*/
