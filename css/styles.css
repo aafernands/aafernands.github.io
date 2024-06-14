@@ -74,7 +74,7 @@ footer {
 	background-color: #333;
 	color: white;
 	text-align: center;
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
 	bottom: 0;
 	padding: 1rem 0;
