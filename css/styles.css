@@ -5,12 +5,16 @@ html {
 	padding: 0;
 }
 .container {
-  padding: 20px;
+	padding: 20px;
 	max-width: 100%;
 	height: auto;
-  display: flex;
-    justify-content: center; /* horizontal centering */
-    align-items: center; /* vertical centering */
+	display: flex;
+	justify-content: center; /* horizontal centering */
+	align-items: center; /* vertical centering */
+	background-color: #333;
+	color: white;
+    border-radius: 10px;
+
 }
 
 img {
@@ -21,14 +25,20 @@ img {
 }
 
 .intro {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	font-size: 15px;
+
 }
 
 .text {
 	flex: 1;
 	padding: 0 20px; /* Adjust the padding as needed */
 }
+
+.welcome{
+	color: aliceblue;
+  }
 
 @media screen and (max-width: 768px) {
 	.container {
@@ -134,5 +144,5 @@ footer {
 }
 
 h5 {
-    font-size: 15px !important;
+	font-size: 15px !important;
 }
