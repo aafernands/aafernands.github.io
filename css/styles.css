@@ -1,3 +1,12 @@
+
+.playwrite-ca-intro_font {
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 body,
 html {
 	font-family: Arial, sans-serif;
@@ -11,7 +20,7 @@ html {
 	display: flex;
 	justify-content: center; /* horizontal centering */
 	align-items: center; /* vertical centering */
-	background-color: #333;
+	background-color: rgba(255,255,255, 0.2);
 	color: white;
     border-radius: 10px;
 
@@ -19,25 +28,31 @@ html {
 
 img {
 	flex: 1;
-	max-width: 100%; /* You can adjust this value according to your needs */
+	max-width: 80%; /* You can adjust this value according to your needs */
 	height: auto; /* This ensures the image maintains its aspect ratio */
 	padding-bottom: 40px;
 }
 
 .intro {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	font-size: 15px;
+	padding: 40px; /* Adjust the padding as needed */
+
 
 }
 
 .text {
 	flex: 1;
-	padding: 0 20px; /* Adjust the padding as needed */
 }
 
 .welcome{
 	color: aliceblue;
+	font-size: 70px;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+
   }
 
 @media screen and (max-width: 768px) {
@@ -74,6 +89,8 @@ nav ul li a {
 
 main {
 	padding: 2rem;
+	background-color: #333;
+
 }
 
 section#intro {
