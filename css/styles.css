@@ -71,15 +71,21 @@ html {
 	flex: 1;
 }
 
-.welcome{
-	color: aliceblue;
-	font-size: 70px;
-	padding-top: 40px;
-	padding-left: 40px;
-	padding-right: 40px;
-	text-align: center;
+.welcome {
+    color: aliceblue;
+    font-size: auto;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center; /* Center text */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin: 0 auto; /* Center the element in its parent */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    flex-direction: column; /* Column layout for better vertical centering */
+}
 
-  }
 
 @media screen and (max-width: 768px) {
 	.container {
