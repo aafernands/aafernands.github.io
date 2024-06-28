@@ -27,7 +27,7 @@ html {
 
 /* Ensure the image scales within the container */
 #container img {
-    max-width: 100%; /* Ensures image does not exceed container's width */
+    max-width: 50%; /* Ensures image does not exceed container's width */
     max-height: 100%; /* Ensures image does not exceed container's height */
     height: auto; /* Maintains aspect ratio */
     width: auto; /* Prevents stretching */
