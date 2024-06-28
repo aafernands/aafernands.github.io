@@ -34,12 +34,12 @@ html {
 }
 
 /* Ensure the image scales well within its container */
+/* Ensure the image scales well within its container */
 .img-fluid.center-image {
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%; /* Ensure the image does not overflow the container */
+    object-fit: contain; /* Scales the image without distorting it */
 }
 
 /* Optional: styling for section background or padding */
@@ -53,6 +53,7 @@ html {
     border-radius: 10px;
     padding: 20px;
 }
+
 
 
 
