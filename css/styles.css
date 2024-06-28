@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-
+ƒ√
 body,
 html {
 	font-family: Arial, sans-serif;
@@ -62,6 +62,7 @@ html {
 	text-align: center;
 	font-size: 15px;
 	padding: 40px; /* Adjust the padding as needed */
+	color: aliceblue;
 
 
 }
@@ -76,6 +77,7 @@ html {
 	padding-top: 40px;
 	padding-left: 40px;
 	padding-right: 40px;
+	text-align: center;
 
   }
 
