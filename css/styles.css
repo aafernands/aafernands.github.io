@@ -13,25 +13,48 @@ html {
 	margin: 0;
 	padding: 0;
 }
-.container {
-	padding: 20px;
-	max-width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center; /* horizontal centering */
-	align-items: center; /* vertical centering */
-	background-color: rgba(255,255,255, 0.2);
-	color: white;
+#container {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     border-radius: 10px;
-
 }
 
-img {
-	flex: 1;
-	max-width: 80%; /* You can adjust this value according to your needs */
-	height: auto; /* This ensures the image maintains its aspect ratio */
-	padding-bottom: 40px;
+/* Ensure the image scales within the container */
+#container img {
+    max-width: 100%; /* Ensures image does not exceed container's width */
+    max-height: 100%; /* Ensures image does not exceed container's height */
+    height: auto; /* Maintains aspect ratio */
+    width: auto; /* Prevents stretching */
 }
+
+/* Ensure the image scales well within its container */
+.img-fluid.center-image {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: styling for section background or padding */
+#projects {
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+/* Optional: additional styling for better visualization */
+#projects .container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
 
 .intro {
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
