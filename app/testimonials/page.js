@@ -5,7 +5,7 @@ export default function Testimonials() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Testimonials</h1>
-        <p>See what our customers are saying about us!</p>
+        <p className={styles.introText}>See what our customers are saying about us!</p>
         <ul className={styles.testimonialList}>
           <li className={styles.testimonialItem}>
             <blockquote>
