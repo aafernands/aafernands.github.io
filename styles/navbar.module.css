@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ff0000;
+    background-color: #f6ce2f;
     color: white;
   }
   
@@ -40,7 +40,7 @@
   
   .drawerMenu {
     padding: 20px;
-    background-color: #333;
+    background-color: #f6ce2f;
     height: 100%;
   }
   
