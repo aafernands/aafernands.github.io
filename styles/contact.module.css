@@ -1,52 +1,96 @@
-/* Testimonials Section */
-.testimonialList {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  .testimonialItem {
-    background-color: var(--gray-alpha-100);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .testimonialItem blockquote {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--gray-rgb);
-    margin-bottom: 10px;
-  }
-  
-  .testimonialItem p {
-    font-weight: bold;
-    color: var(--gray-rgb);
-  }
-  
-  .reviewLink {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--button-primary-hover);
-    text-decoration: none;
-  }
-  
-  .reviewLink:hover {
-    text-decoration: underline;
-  }
-  
-  .introText {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: var(--gray-rgb);
-  }
-  
-  @media (max-width: 600px) {
-    .testimonialList {
-      padding: 0 16px;
-    }
-  }
-  
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #555;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #28a745;
+  text-align: center;
+}
