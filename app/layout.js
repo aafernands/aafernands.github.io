@@ -2,6 +2,7 @@
 import './globals.css'; // Your global styles
 import { Inter } from 'next/font/google'; // Example of a font import
 import Navbar from '../components/Navbar'; // Import Navbar component
+import Footer from '../components/Footer'; // Import Footer component
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,9 +20,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children} {/* This will render the content of each page */}
-        <footer>
-          <p>© {currentDate} FNDS Labs. All rights reserved.</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

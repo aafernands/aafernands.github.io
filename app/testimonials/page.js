@@ -1,4 +1,4 @@
-import styles from "../page.module.css";
+import styles from "../../styles/testimonials.module.css";
 
 export default function Testimonials() {
   return (
