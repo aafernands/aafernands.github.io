@@ -16,13 +16,13 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: black;  }
+    color: rgb(255, 255, 255);  }
   
   .paragraph {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: black;  }
+    color: rgb(255, 255, 255);  }
   
   .contactButton {
     display: inline-block;
