@@ -3,6 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
+    
   }
   
   .aboutSection {
@@ -15,15 +16,13 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #ffffff;
-  }
+    color: black;  }
   
   .paragraph {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #ffffff;
-  }
+    color: black;  }
   
   .contactButton {
     display: inline-block;
