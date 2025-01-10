@@ -4,13 +4,13 @@
   "homepage": "https://aafernands.github.io",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint",
-  "predeploy": "next build && next export",
-  "deploy": "gh-pages -d out"
-},
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "next build && next export",
+    "deploy": "gh-pages -d out"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
