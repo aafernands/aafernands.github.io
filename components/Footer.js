@@ -1,5 +1,6 @@
 // Importing necessary Material UI components and icons
 import { Facebook, Instagram } from '@mui/icons-material';
+import Link from 'next/link';
 import styles from "../styles/footer.module.css"; // Import the CSS module
 
 const Footer = () => {
@@ -9,7 +10,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       {/* Logo Section */}
       <div className={styles.logo}>
+      <Link href="/">
         <img src="../logoColors.jpg" alt="FNDS Labs Logo" className={styles.logoImage} />
+        </Link>
+
       </div>
 
       {/* Placeholder Message */}

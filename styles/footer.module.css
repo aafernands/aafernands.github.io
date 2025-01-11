@@ -1,5 +1,5 @@
 .footer {
-	background-color: #333; /* Dark background */
+	background-color: #000000; /* Dark background */
 	color: #fff; /* White text */
 	padding: 40px 20px; /* Padding on top and bottom */
 	text-align: center; /* Center-align the text */
@@ -56,5 +56,5 @@
 }
 
 .icon:hover {
-	color: #fc0000; /* Hover color for icons */
+	color: #f6ce2f;; /* Hover color for icons */
 }
