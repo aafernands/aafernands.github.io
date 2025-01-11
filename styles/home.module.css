@@ -1,0 +1,100 @@
+/* styles/Home.module.css */
+
+.container {
+    font-family: Arial, sans-serif;
+    padding: 0 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 1rem 0;
+  }
+  
+  .ctaButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .ctaButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .main {
+    margin: 2rem 0;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .section ul, .section ol {
+    padding-left: 1.5rem;
+    color: #505050;
+    line-height: 1.6;
+  }
+  
+  .pricingGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .pricingCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .pricingCard h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricingCard p {
+    color: #3f3f3f;
+  }
+  
+  .blockquote {
+    border-left: 4px solid #0070f3;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #555;
+  }
+  
+  .blockquote footer {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .footer {
+    text-align: center;
+    margin: 2rem 0;
+    color: #777;
+  }
+  
