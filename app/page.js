@@ -1,6 +1,8 @@
 // app/page.js (Home Page)
 
 import styles from "./page.module.css";
+import UnderConstruction from "../components/UnderConstruction";
+
 
 export const metadata = {
   title: "Your Vision, Our Code",
@@ -15,13 +17,9 @@ export default function Home() {  const currentDate = new Date().getFullYear();
 
   // Check if the environment variable is set to 'true'
   if (process.env.SHOW_UNDER_CONSTRUCTION === 'true') {
-    return (
-      <div className={styles.container}>
-        <h1>Under Construction</h1>
-        <p>We are currently working on updates. Please check back soon!</p>
-      </div>
-    );
+    return <UnderConstruction />;
   }
+  
 
   return (
     <div className={styles.container}>

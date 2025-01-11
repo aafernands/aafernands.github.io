@@ -1,0 +1,71 @@
+
+
+/* UNDER CONTRUSCTION SECTION CSS */
+/* Center the container on the screen */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  .content {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Maximum width */
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .progressContainer {
+    position: relative;
+  }
+  
+  .progressBar {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e0e0e0; /* Light gray background */
+    appearance: none;
+  }
+  
+  .progressBar::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .progressBar::-webkit-progress-value {
+    background-color: #007bff; /* Blue progress bar */
+    border-radius: 10px;
+  }
+  
+  .progressBar::-moz-progress-bar {
+    background-color: #007bff; /* Blue progress bar for Firefox */
+    border-radius: 10px;
+  }
+  
+  .progressPercentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff; /* Blue text for percentage */
+  }
+  
