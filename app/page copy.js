@@ -12,18 +12,6 @@ export const metadata = {
 
 export default function Home() {  const currentDate = new Date().getFullYear();
 
-
-  // Check if the environment variable is set to 'true'
-  if (process.env.SHOW_UNDER_CONSTRUCTION === 'true') {
-    return (
-      <div className={styles.container}>
-        <h1>Under Construction</h1>
-        <p>We are currently working on updates. Please check back soon!</p>
-      </div>
-    );
-  }
-
-
   return (
     <div className={styles.container}>
       <header className={styles.header}>

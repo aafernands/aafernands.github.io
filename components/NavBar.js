@@ -26,10 +26,10 @@ export default function Navbar() {
       {/* Desktop Menu on the right */}
       <ul className={styles.navLinks}>
         <li><Link href="/">Home</Link></li>
-        <li><Link href="/about">About</Link></li>
+        {/* <li><Link href="/about">About</Link></li> */}
         <li><Link href="/contact">Contact</Link></li>
-        <li><Link href="/testimonials">Testimonials</Link></li>
-        <li><Link href="/pricing">Pricing</Link></li>
+        {/* <li><Link href="/testimonials">Testimonials</Link></li>
+        <li><Link href="/pricing">Pricing</Link></li> */}
       </ul>
 
       {/* Mobile Menu Icon */}
@@ -42,10 +42,10 @@ export default function Navbar() {
         <div className={styles.drawerMenu}>
           <ul>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About</Link></li>
+            {/* <li><Link href="/about">About</Link></li> */}
             <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/testimonials">Testimonials</Link></li>
-            <li><Link href="/pricing">Pricing</Link></li>
+            {/* <li><Link href="/testimonials">Testimonials</Link></li>
+            <li><Link href="/pricing">Pricing</Link></li> */}
           </ul>
         </div>
       </Drawer>
