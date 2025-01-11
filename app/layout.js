@@ -21,6 +21,15 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children} {/* This will render the content of each page */}
         <Footer />
+
+        {/* Injecting Tidio script */}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `
+              <script src="//code.tidio.co/sf7zqeagqkbig5d56iqlot3fq8nygg0k.js" async></script>
+            `,
+          }}
+        />
       </body>
     </html>
   );

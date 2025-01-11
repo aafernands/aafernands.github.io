@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^5.16.14",
     "@mui/material": "^5.16.14",
+    "@toolpad/core": "^0.12.0",
     "next": "15.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
