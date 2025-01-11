@@ -23,7 +23,6 @@ export default function Home() {  const currentDate = new Date().getFullYear();
     );
   }
 
-
   return (
     <div className={styles.container}>
       <header className={styles.header}>

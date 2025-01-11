@@ -1,25 +1,48 @@
+/* Global Theme Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* Light background */
+  --foreground: #171717; /* Dark text for light mode */
+  --form-background: #ffffff; /* Light form background */
+  --input-background: #fdfdfd; /* Light input background */
+  --input-border: #ccc; /* Light input border */
+  --input-focus-border: #007bff; /* Focused input border color */
+  --input-focus-shadow: rgba(0, 123, 255, 0.5); /* Focused input shadow */
+  --button-bg: #f6ce2f; /* Yellow button background */
+  --button-hover-bg: #0056b3; /* Button hover background */
+  --button-text: #fff; /* Button text color */
+  --success-message: #28a745; /* Success message color */
+  --testimonial-bg: rgba(0, 0, 0, 0.05); /* Light testimonial background */
+  --button-primary-hover: #616161; /* Button hover color */
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #052f75;
-    --foreground: #ededed;
+    --background: #171717; /* Dark background */
+    --foreground: #ededed; /* Light text for dark mode */
+    --form-background: #333; /* Dark form background */
+    --input-background: #444; /* Dark input background */
+    --input-border: #555; /* Dark input border */
+    --input-focus-border: #007bff; /* Focused input border color */
+    --input-focus-shadow: rgba(0, 123, 255, 0.5); /* Focused input shadow */
+    --button-bg: #f7b500; /* Lighter yellow for dark mode */
+    --button-hover-bg: #005bb5; /* Button hover background */
+    --button-text: #171717; /* Button text color */
+    --success-message: #28a745; /* Success message color */
+    --testimonial-bg: rgba(255, 255, 255, 0.1); /* Dark testimonial background */
+    --button-primary-hover: #999999; /* Dark mode button hover color */
   }
 }
 
+
+/* Global styles for body */
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

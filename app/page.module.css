@@ -1,6 +1,4 @@
-
-/* styles/Home.module.css */
-
+/* Home Page Styles */
 .container {
   padding: 0 2rem;
 }
@@ -12,20 +10,20 @@
 
 .header h1 {
   font-size: 2rem;
-  color: #8001da;
+  color: var(--foreground);  /* Uses the foreground color based on the theme */
   text-align: left;
-
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--foreground);  /* Uses the foreground color based on the theme */
   margin: 1rem 0;
 }
 
+/* Button Styles */
 .ctaButton {
-  background-color: #c7b428;
-  color: white;
+  background-color: var(--button-bg);  /* Yellow button background */
+  color: var(--foreground);  /* Text color based on theme */
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -35,9 +33,10 @@
 }
 
 .ctaButton:hover {
-  background-color: #005bb5;
+  background-color: var(--button-hover-bg);  /* Hover effect for button */
 }
 
+/* Main Section */
 .main {
   margin: 2rem 0;
 }
@@ -48,13 +47,13 @@
 
 .section h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: var(--foreground);  /* Use theme-based foreground color */
   margin-bottom: 1rem;
 }
 
 .section ul, .section ol {
   padding-left: 1.5rem;
-  color: #464646;
+  color: var(--foreground);  /* Use theme-based foreground color */
   line-height: 1.6;
 }
 
@@ -69,33 +68,34 @@
   border-radius: 5px;
   padding: 1rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: var(--background);  /* Background based on theme */
 }
 
 .pricingCard h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--foreground);  /* Use theme-based foreground color */
   margin-bottom: 0.5rem;
 }
 
 .pricingCard p {
-  color: #333333;
+  color: var(--foreground);  /* Use theme-based foreground color */
 }
 
 .blockquote {
   border-left: 4px solid #0070f3;
   padding-left: 1rem;
   margin: 1rem 0;
-  color: #555;
+  color: var(--foreground);  /* Use theme-based foreground color */
 }
 
 .blockquote footer {
   font-size: 0.9rem;
-  color: #ffffff;
+  color: var(--foreground);  /* Use theme-based foreground color */
 }
 
+/* Footer */
 .footer {
   text-align: center;
   margin: 2rem 0;
-  color: #ffffff;
+  color: var(--foreground);  /* Use theme-based foreground color */
 }

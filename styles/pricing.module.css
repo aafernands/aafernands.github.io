@@ -1,131 +1,143 @@
+/* Pricing Container */
 .pricingContainer {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: white
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
-  }
-  
-  .plansContainer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .planCard {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
-  }
-  
-  .planCard:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  .popularPlan {
-    border: 2px solid #007bff;
-  }
-  
-  .premiumPlan {
-    border: 2px solid #28a745;
-    background: #f0fff4;
-  }
-  
-  .popularBadge,
-  .premiumBadge {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 4px;
-  }
-  
-  .premiumBadge {
-    background: #28a745;
-  }
-  
-  .planName {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: blue;
-  }
-  
-  .pages {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #777;
-  }
-  
-  .price {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .setupFee {
-    font-size: 1rem;
-    color: #888;
-    margin-bottom: 20px;
-  }
-  
-  .featuresList {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .feature {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 8px;
-  }
-  
-  .icon {
-    color: #28a745;
-    margin-right: 10px;
-  }
-  
-  .ctaButton {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .ctaButton:hover {
-    background: #0056b3;
-  }
-  
-  .premiumPlan .ctaButton {
-    background: #28a745;
-  }
-  
-  .premiumPlan .ctaButton:hover {
-    background: #1e7e34;
-  }
-  
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.plansContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Plan Card Styling */
+.planCard {
+  background: #e0e0e0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
+  transform: translateY(0); /* Initial position */
+}
+
+.planCard:hover {
+  transform: translateY(-15px); /* Lift the card further on hover */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Stronger shadow for deeper 3D effect */
+}
+
+/* Popular Plan Styling */
+.popularPlan {
+  border: 2px solid #007bff;
+}
+
+.premiumPlan {
+  border: 2px solid #28a745;
+  background: #f0fff4;
+}
+
+/* Badges for Popular and Premium Plans */
+.popularBadge,
+.premiumBadge {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.premiumBadge {
+  background: #28a745;
+}
+
+/* Plan Name Styling */
+.planName {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Other Text Styling */
+.pages {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.setupFee {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Features List */
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.feature {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.icon {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+/* Call-to-Action Button */
+.ctaButton {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.premiumPlan .ctaButton {
+  background: #28a745;
+}
+
+.premiumPlan .ctaButton:hover {
+  background: #1e7e34;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
