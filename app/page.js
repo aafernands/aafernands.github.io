@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>Welcome to FNDS Labs</h1>
+        <h1>Welcome to FNDS Labs!</h1>
         <p>Your go-to place for web development and tech innovations.</p>
       </main>
       <footer className={styles.footer}>
