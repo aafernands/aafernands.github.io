@@ -26,11 +26,9 @@ export default function Home() {  const currentDate = new Date().getFullYear();
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Welcome!!!! Your Vision, Our Code</h1>
+        <h1>Your Vision, <br></br>Our Code</h1>
         <p>Custom web solutions, simplified.</p>
-        <button className={styles.ctaButton}>
-          Let’s Build Something Amazing Together
-        </button>
+       
       </header>
 
       <main className={styles.main}>

@@ -1,20 +1,60 @@
 .footer {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    padding: 20px 0; /* Padding on top and bottom */
-    text-align: center; /* Center-align the text */
-    font-size: 14px; /* Font size */
-  }
-  
-  .footer p {
-    margin: 0; /* Remove margin from paragraph */
-  }
-  
-  .footer a {
-    color: #fff; /* White color for links */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
+	background-color: #333; /* Dark background */
+	color: #fff; /* White text */
+	padding: 40px 20px; /* Padding on top and bottom */
+	text-align: center; /* Center-align the text */
+	font-size: 14px; /* Font size */
+}
+
+.footer p {
+	margin: 0; /* Remove margin from paragraph */
+}
+
+.footer a {
+	color: #fff; /* White color for links */
+	text-decoration: none; /* Remove underline */
+	margin: 0 10px; /* Space between links */
+}
+
+.footer a:hover {
+	text-decoration: underline; /* Underline on hover */
+}
+
+.logo {
+	margin-bottom: 20px;
+}
+
+.logoImage {
+	width: 150px; /* Adjust the size of the logo */
+	height: auto;
+}
+
+.message {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.menuLinks {
+	margin-bottom: 20px;
+}
+
+.menuLinks a {
+	margin: 0 15px; /* Space between menu links */
+}
+
+.socialMedia {
+	margin-bottom: 20px;
+}
+
+.socialMedia a {
+	margin: 0 15px; /* Space between social media icons */
+}
+
+.icon {
+	font-size: 24px; /* Adjust icon size */
+	color: #fff; /* White color for icons */
+}
+
+.icon:hover {
+	color: #fc0000; /* Hover color for icons */
+}
