@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className={styles.logo}>
         <Link href="/">
           {/* Replace with your logo */}
-          <img src="../logoBlack.jpg" alt="FNDS Labs Logo" className={styles.logoImage} />
+          <img src="../logoColors.jpg" alt="FNDS Labs Logo" className={styles.logoImage} />
         </Link>
       </div>
 

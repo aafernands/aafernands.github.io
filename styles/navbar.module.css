@@ -6,6 +6,7 @@
     padding: 10px 20px;
     background-color: #000000;
     color: white;
+
   }
   
   .logo {
@@ -41,7 +42,8 @@
   .drawerMenu {
     padding: 40px;
     background-color:#000000;
-    height: 50vh;
+    height: 100vh;
+
   }
   
   .drawerMenu ul {
@@ -73,6 +75,6 @@
   
 
   .logoImage {
-    height: 40px;
+    height: 60px;
   }
 

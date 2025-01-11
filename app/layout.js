@@ -3,8 +3,14 @@ import './globals.css'; // Your global styles
 import { Inter } from 'next/font/google'; // Example of a font import
 import Navbar from '../components/NavBar'; // Import Navbar component
 import Footer from '../components/Footer'; // Import Footer component
+import { Montserrat } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const montserrat = Montserrat({
+  subsets: ['latin'], // Include subsets for your use case
+  weight: ['400', '700'], // Specify font weights you need
+});
 
 export default function RootLayout({ children }) {
   const currentDate = new Date().getFullYear();
@@ -17,7 +23,7 @@ export default function RootLayout({ children }) {
         <title>FNDS Labs</title>
         {/* Add any other global head elements like meta tags, links, etc. */}
       </head>
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Navbar />
         {children} {/* This will render the content of each page */}
         <Footer />

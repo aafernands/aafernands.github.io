@@ -16,8 +16,10 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^5.16.14",
     "@mui/material": "^5.16.14",
+    "@next/font": "^14.2.15",
     "@toolpad/core": "^0.12.0",
     "next": "15.1.4",
+    "next-fonts": "^1.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
