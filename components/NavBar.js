@@ -17,7 +17,10 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       {/* Logo on the left */}
       <div className={styles.logo}>
-        <Link href="/">FNDS Labs</Link>
+        <Link href="/">
+          {/* Replace with your logo */}
+          <img src="../logoBlack.jpg" alt="FNDS Labs Logo" className={styles.logoImage} />
+        </Link>
       </div>
 
       {/* Desktop Menu on the right */}

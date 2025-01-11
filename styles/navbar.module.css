@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #358efa;
+    background-color: #000000;
     color: white;
   }
   
@@ -39,9 +39,9 @@
   }
   
   .drawerMenu {
-    padding: 20px;
-    background-color:#3385d9;
-    height: 100%;
+    padding: 40px;
+    background-color:#000000;
+    height: 50vh;
   }
   
   .drawerMenu ul {
@@ -71,3 +71,8 @@
     }
   }
   
+
+  .logoImage {
+    height: 40px;
+  }
+
