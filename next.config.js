@@ -1,7 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  trailingSlash: true, // Ensures each page has a trailing slash
-  output: 'export', // Adds static export support
+// next.config.js
+module.exports = {
+  trailingSlash: true,  // Ensures each page has a trailing slash
+  output: 'export',     // Enables static export
 };
-
-export default nextConfig;
