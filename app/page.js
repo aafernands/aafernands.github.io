@@ -10,11 +10,7 @@ export default function Home() {
         <h1>Welcome to FNDS Labs!</h1>
         <p>Your go-to place for web development and tech innovations.</p>
       </main>
-      <footer className={styles.footer}>
-        <p>
-          © <span>{currentDate}</span> FNDS Labs. All rights reserved.
-        </p>
-      </footer>
+      
     </div>
   );
 }
