@@ -1,6 +1,8 @@
 // app/layout.js
 import './globals.css'; // Your global styles
 import { Inter } from 'next/font/google'; // Example of a font import
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
 import { Montserrat } from 'next/font/google'; // Another font import
 import { Ubuntu } from 'next/font/google'; // Import Ubuntu font
 import Navbar from '../components/NavBar'; // Import Navbar component

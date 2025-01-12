@@ -1,143 +1,185 @@
 /* Pricing Container */
 .pricingContainer {
-  padding: 50px;
-  text-align: center;
+	padding: 50px;
+	text-align: center;
+}
+
+.priceContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin-left: 10px;  /* 10px gap on the left */
 }
 
 .title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: white;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	color: white;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 40px;
+	font-size: 1.2rem;
+	color: #555;
+	margin-bottom: 40px;
 }
 
 .plansContainer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 /* Plan Card Styling */
 .planCard {
-  background: #e0e0e0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  text-align: left;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
-  transform: translateY(0); /* Initial position */
+	background: #e0e0e0;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	width: 300px;
+	text-align: left;
+	position: relative;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	margin-bottom: 20px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
+	transform: translateY(0); /* Initial position */
 }
 
 .planCard:hover {
-  transform: translateY(-15px); /* Lift the card further on hover */
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Stronger shadow for deeper 3D effect */
+	transform: translateY(-15px); /* Lift the card further on hover */
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Stronger shadow for deeper 3D effect */
 }
 
 /* Popular Plan Styling */
 .popularPlan {
-  border: 2px solid #007bff;
+	border: 2px solid #007bff;
 }
 
 .premiumPlan {
-  border: 2px solid #28a745;
-  background: #f0fff4;
+	border: 2px solid #28a745;
+	background: #f0fff4;
 }
 
 /* Badges for Popular and Premium Plans */
 .popularBadge,
 .premiumBadge {
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  background: #007bff;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  border-radius: 4px;
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	background: #007bff;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	border-radius: 4px;
 }
 
 .premiumBadge {
-  background: #28a745;
+	background: #28a745;
 }
 
 /* Plan Name Styling */
 .planName {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-  font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: #333;
+	font-weight: bold;
 }
 
 /* Other Text Styling */
 .pages {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #777;
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+	color: #777;
 }
 
 .price {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 10px;
+	font-size: 3.5rem;
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.oldPrice {
+	font-size: 1rem;
+	color: #f75b00;
+	text-decoration: line-through;
 }
 
 .setupFee {
-  font-size: 1rem;
-  color: #888;
-  margin-bottom: 20px;
+	font-size: 1rem;
+	color: #888;
+	margin-bottom: 20px;
 }
 
 /* Features List */
 .featuresList {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 20px;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
 }
 
 .feature {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 8px;
+	font-size: 1rem;
+	color: #333;
+	margin-bottom: 8px;
 }
 
+/* Icon Styling */
 .icon {
-  color: #28a745;
-  margin-right: 10px;
+	color: #000000;
+	margin-right: 10px;
+	font-size: 1rem; /* Adjust the size here */
 }
 
 /* Call-to-Action Button */
 .ctaButton {
-  background: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+	background: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		transform 0.3s ease;
 }
 
 .ctaButton:hover {
-  background: #0056b3;
-  transform: translateY(-2px); /* Slight lift on hover */
+	background: #0056b3;
+	transform: translateY(-2px); /* Slight lift on hover */
 }
 
 .premiumPlan .ctaButton {
-  background: #28a745;
+	background: #28a745;
 }
 
 .premiumPlan .ctaButton:hover {
-  background: #1e7e34;
-  transform: translateY(-2px); /* Slight lift on hover */
+	background: #1e7e34;
+	transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Features List */
+.featuresList {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
+	padding-bottom: 20px; /* Add padding below the list */
+}
+
+/* Feature Item Styling */
+.feature {
+	font-size: 1rem;
+	border-bottom: 1px solid #c6c6c6; /* Light gray line between features */
+	margin-bottom: 8px;
+	padding: 8px 0; /* Add padding between feature items */
+}
+
+.month {
+	font-size: 1rem;
+	margin-bottom: 20px;
+	color: #000000;
 }
