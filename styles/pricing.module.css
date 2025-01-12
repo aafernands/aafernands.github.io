@@ -16,6 +16,7 @@
 	margin-bottom: 20px;
 	color: white;
 	font-weight: 100 !important;
+	padding: 20;
 }
 
 .subtitle {
@@ -77,6 +78,7 @@
 	font-size: 0.9rem;
 	font-weight: bold;
 	border-radius: 4px;
+	padding: 10px;
 }
 
 .premiumBadge {
@@ -85,10 +87,12 @@
 
 /* Plan Name Styling */
 .planName {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	margin-bottom: 10px;
 	color: #333;
 	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 /* Other Text Styling */
@@ -225,3 +229,7 @@
 	color: #7f7f7f;
 }
 
+.setupFee {
+justify-content:center;
+
+}

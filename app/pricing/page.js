@@ -99,9 +99,10 @@ const Pricing = () => {
 		{
 			name: "Basic Plan",
 			pages: "1-3 Pages",
-			price: "$299",
-			oldPrice: "$349",
+			price: "$99",
+			oldPrice: "$149",
 			month: "/month",
+			setupFee: " Set up fee $299 (One-Time)",
 			targetAudience: "Perfect for small businesses or personal websites.",
 			features: basicFeatures, // Use basic features for Basic Plan
 			stripeLink: "https://buy.stripe.com/7sIdSaeAn3TW39mcMN", // Add Stripe link for this plan
@@ -109,9 +110,10 @@ const Pricing = () => {
 		{
 			name: "Standard Plan",
 			pages: "4-6 Pages",
-			price: "$499",
-			oldPrice: "$549",
+			price: "$199",
+			oldPrice: "$249",
 			month: "/month",
+			setupFee: "Set up fee $499 (One-Time)",
 			targetAudience: "Great for growing businesses needing more features.",
 			features: standardFeatures, // Use standard features (including basic) for Standard Plan
 			popular: true,
@@ -120,9 +122,10 @@ const Pricing = () => {
 		{
 			name: "Premium Plan",
 			pages: "Unlimited Pages",
-			price: "$899",
-			oldPrice: "$999",
+			price: "$399",
+			oldPrice: "$449",
 			month: "/month",
+			setupFee: "Set up fee $899 (One-Time)",
 			targetAudience:
 				"Ideal for businesses needing advanced features and customization.",
 			features: premiumFeatures, // Use premium features (including standard) for Premium Plan
@@ -154,7 +157,6 @@ const Pricing = () => {
 		"Custom Business Profile Listing": faBusinessTime,
 		"Priority Support": faUserShield,
 		"Cancel Anytime": faPhone,
-		"No Setup Fee": faBusinessTime,
 		"Basic Custom Design": faPaintRoller,
 		"Custom Design": faPaintRoller,
 		"Advanced Custom Design": faPaintRoller,
@@ -166,7 +168,7 @@ const Pricing = () => {
 			<h1 className={styles.title}>Affordable Web Design & Hosting Plans</h1>
 			<p className={styles.subtitle}>
 				Choose the plan that best fits your needs. All plans come with
-				professional design, reliable hosting, and excellent support.
+				professional design, reliable hosting, and excellent support. Cancel anytime.
 			</p>
 
 			<div className={styles.plansContainer}>
@@ -191,6 +193,8 @@ const Pricing = () => {
 							<span className={styles.price}>{plan.price}</span>
 							<span className={styles.month}>{plan.month}</span>
 						</div>
+						<span className={styles.setupFee}>{plan.setupFee}</span>
+
 						<ul className={styles.featuresList}>
 							{plan.features.map((feature, i) => {
 								const icon = iconMapping[feature];
