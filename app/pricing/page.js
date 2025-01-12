@@ -32,12 +32,13 @@ const Pricing = () => {
 				"Email Support",
 				"Delivery: 1-2 weeks",
 			],
+			stripeLink: "https://buy.stripe.com/3cs6pIdwj2PSeS4000", // Add Stripe link for this plan
 		},
 		{
 			name: "Affordable Plan",
 			pages: "4-6 Pages",
 			price: "$199",
-			oldPrice: "249",
+			oldPrice: "$249",
 			month: "/month",
 			setupFee: "$399 (one-time)",
 			features: [
@@ -51,6 +52,7 @@ const Pricing = () => {
 				"Delivery: 2-3 weeks",
 			],
 			popular: true,
+			stripeLink: "https://buy.stripe.com/3cs6pIdwj2PSeS4000", // Add Stripe link for this plan
 		},
 		{
 			name: "Ultimate Package",
@@ -71,6 +73,7 @@ const Pricing = () => {
 				"Delivery: 3-4 weeks",
 			],
 			premium: true,
+			stripeLink: "https://buy.stripe.com/3cs6pIdwj2PSeS4000", // Add Stripe link for this plan
 		},
 	];
 
@@ -144,12 +147,19 @@ const Pricing = () => {
 						</ul>
 
 						<div className={styles.planCardCta}>
-							<button className={styles.ctaButton}>Select Plan</button>
+							<a
+								href={plan.stripeLink} // Use the plan's Stripe link
+								target="_blank"
+								rel="noopener noreferrer"
+								className={styles.ctaButton}
+							>
+								Select Plan
+							</a>
 							<a
 								href="https://calendly.com/fndslabs-15min-call/15min"
 								target="_blank"
 								rel="noopener noreferrer"
-								className={styles.scheduleLink} // Optional: add a class for custom styling
+								className={styles.scheduleLink}
 							>
 								<br />
 								<br />
