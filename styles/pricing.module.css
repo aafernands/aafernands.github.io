@@ -183,3 +183,29 @@
 	margin-bottom: 20px;
 	color: #000000;
 }
+
+
+.planCardCta {
+  display: flex;
+  flex-direction: column; /* Stack the button and the link vertically */
+  align-items: center;    /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center;      /* Optional: centers text inside each element */
+}
+
+.ctaButton {
+  margin-bottom: 10px; /* Optional: space between the button and the link */
+}
+
+.scheduleLink {
+  cursor: pointer;
+  color: #007bff; /* Optional: link color */
+  text-decoration: none; /* Optional: underline the link */
+  font-weight: bold;
+}
+
+.scheduleLink {
+	font-size: 1rem;
+	margin-bottom: 20px;
+	color: #000000;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
-	faServer,
+	faPhone,
 	faShieldAlt,
 	faChalkboardTeacher,
 	faSearch,
@@ -10,7 +10,7 @@ import {
 	faEnvelope,
 	faUserShield,
 	faBusinessTime,
-  faTruck,
+	faTruck,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/pricing.module.css"; // Ensure the correct path to your CSS file
 
@@ -30,7 +30,7 @@ const Pricing = () => {
 				"Blazing Fast Hosting",
 				"Responsive Design",
 				"Email Support",
-        "Delivery: 1-2 weeks",
+				"Delivery: 1-2 weeks",
 			],
 		},
 		{
@@ -48,7 +48,7 @@ const Pricing = () => {
 				"Blazing Fast Hosting",
 				"Responsive Design",
 				"Email & Phone Support",
-        "Delivery: 2-3 weeks",
+				"Delivery: 2-3 weeks",
 			],
 			popular: true,
 		},
@@ -56,7 +56,7 @@ const Pricing = () => {
 			name: "Ultimate Package",
 			pages: "Unlimited Pages",
 			price: "$299",
-      month: "/month",
+			month: "/month",
 			oldPrice: "$349",
 			setupFee: "$999 (one-time)",
 			features: [
@@ -68,20 +68,21 @@ const Pricing = () => {
 				"Blazing Fast Hosting",
 				"Complete Security Suite",
 				"Custom Business Profile Listing",
-        "Delivery: 3-4 weeks",
+				"Delivery: 3-4 weeks",
 			],
 			premium: true,
 		},
 	];
 
 	const iconMapping = {
-		"24/7 Server Maintenance": faServer,
+		"24/7 Server Maintenance": faPhone,
 		"SSL & Security": faShieldAlt,
 		"1-on-1 Training": faChalkboardTeacher,
 		"SEO Setup": faSearch,
 		"Blazing Fast Hosting": faMobileAlt,
 		"Responsive Design": faMobileAlt,
 		"Email Support": faEnvelope,
+		"Dashboard Access": faEnvelope,
 		"Enhanced Security": faShieldAlt,
 		"Email & Phone Support": faEnvelope,
 		"Delivery: 1-2 weeks": faTruck,
@@ -141,7 +142,20 @@ const Pricing = () => {
 								);
 							})}
 						</ul>
-						<button className={styles.ctaButton}>Select Plan</button>
+
+						<div className={styles.planCardCta}>
+							<button className={styles.ctaButton}>Select Plan</button>
+							<a
+								href="https://calendly.com/fndslabs-15min-call/15min"
+								target="_blank"
+								rel="noopener noreferrer"
+								className={styles.scheduleLink} // Optional: add a class for custom styling
+							>
+								<br />
+								<br />
+								Schedule a Call
+							</a>
+						</div>
 					</div>
 				))}
 			</div>
