@@ -1,11 +1,5 @@
 /* Home Page Styles */
-.container {
-  display: flex;
-  justify-content: flex-start; /* Align content to the left */
-  align-items: center; /* Vertically center the content */
-  height: 100vh; /* Take up the entire viewport height */
-  padding: 16px; /* Add some padding around the content */
-}
+
 
 .header {
   text-align: left; /* Align text to the left */
