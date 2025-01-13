@@ -1,80 +1,115 @@
 /* Navbar.module.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #000000;
+	color: white;
+}
 
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navLinks {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navLinks li {
-    display: inline;
-  }
-  
-  .navLinks a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .navLinks a:hover {
-    text-decoration: underline;
-  }
-  
-  .menuIcon {
-    display: none;
-    color: rgb(255, 255, 255);
-  }
-  
-  .drawerMenu {
-    padding: 40px;
-    background-color:#000000;
-    height: 100vh;
+.rightButtons {
+	display: flex;
+	gap: 1rem;
+}
 
-  }
-  
-  .drawerMenu ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .drawerMenu li {
-    margin: 10px 0;
-  }
-  
-  .drawerMenu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
+.bookButton {
+	border-color: #fff;
+	color: #fff;
+	text-transform: none;
+}
+
+.ctaButton {
+	background: linear-gradient(to right, #ff3131, #006c61);
+	color: #fff;
+	text-transform: none;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navLinks {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.navLinks li {
+	display: inline;
+}
+
+.navLinks a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.navLinks a:hover {
+	text-decoration: underline;
+}
+
+.menuIcon {
+	display: none;
+	color: rgb(255, 255, 255);
+}
+
+.drawerMenu {
+	padding: 40px;
+	background-color: #000000;
+	height: 100vh;
+}
+
+.drawerMenu ul {
+	list-style: none;
+	padding: 0;
+}
+
+.drawerMenu li {
+	margin: 10px 0;
+}
+
+.drawerMenu a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+	.navLinks {
+		display: none;
+	}
+
+	.menuIcon {
+		display: block;
+	}
+}
+
+.logoImage {
+	height: 60px;
+}
 
 
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .navLinks {
-      display: none;
+
+
+.mainContainer {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: #171717; /* Optional fallback color */
+  }
+
+  .appbar {
+    background: transparent;
+    box-shadow: none;
     }
-  
-    .menuIcon {
-      display: block;
-    }
-  }
-  
 
-  .logoImage {
-    height: 60px;
-  }
 
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      }
+      

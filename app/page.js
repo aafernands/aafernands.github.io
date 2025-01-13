@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import UnderConstruction from "../components/UnderConstruction";
 import { Grid, Container, Typography, Box } from "@mui/material";
 import Hero from "../components/Hero.js";
+import HeroSection from "../components/HeroSection.js";
 
 export const metadata = {
 	title: "Your Vision, Our Code",
@@ -23,7 +24,8 @@ export default function Home() {
 		<div>
 			{/* Full viewport container */}
 			<div >
-				<Hero />
+				<HeroSection />
+				{/* <Hero /> */}
 			</div>
 
 			{/* Header below the main content */}

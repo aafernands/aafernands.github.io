@@ -1,0 +1,99 @@
+.mainContainer {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: #171717; /* Optional fallback color */
+  }
+  
+  .appbar {
+	background: transparent;
+	box-shadow: none;
+  }
+  
+  .toolbar {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fff;
+  }
+  
+  .navLinks {
+	display: flex;
+	gap: 1rem;
+  }
+  
+  .navButton {
+	color: #fff;
+	text-transform: none;
+  }
+  
+  .rightButtons {
+	display: flex;
+	gap: 1rem;
+  }
+  
+  .bookButton {
+	border-color: #fff;
+	color: #fff;
+	text-transform: none;
+  }
+  
+  .ctaButton {
+	background: linear-gradient(to right, #ff3131, #006c61);
+	color: #fff;
+	text-transform: none;
+  }
+  
+  .heroSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	color: #fff;
+	padding: 2rem;
+  }
+  
+  .textContainer {
+	max-width: 600px;
+  }
+  
+  .heroTitle {
+	font-size: 3rem;
+	font-weight: bold;
+  }
+  
+  .highlight {
+	background: linear-gradient(to right, #ff3131, #44ddce);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  
+  .features {
+	padding: 20px;
+  }
+
+  .featureList {
+	margin-top: 1rem;
+  }
+  
+  .featureItem {
+	margin: 0.5rem 0;
+  }
+  
+  .imageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .heroImage {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+  }
+  
