@@ -34,7 +34,6 @@ export default function Home() {
 
       {/* Header below the main content */}
       <header className={styles.header}>
-        <p>Custom web solutions, simplified.</p>
       </header>
 
       {/* Main content below the header */}

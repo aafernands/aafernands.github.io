@@ -29,6 +29,12 @@ export default function Hero() {
                 Our Code!
               </Typography>
             </Typography>
+
+
+
+            <p>Custom web solutions, simplified.</p>
+
+
           </Box>
         </Grid>
 
