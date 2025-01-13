@@ -1,9 +1,9 @@
 /* Global Theme Variables */
 :root {
-  --background: #ffffff; /* Light background */
-  --foreground: #171717; /* Dark text for light mode */
-  --form-background: #ffffff; /* Light form background */
-  --input-background: #fdfdfd; /* Light input background */
+  --background: #171717; /* Light background */
+  --foreground: #ffffff; /* Dark text for light mode */
+  --form-background: #171717; /* Light form background */
+  --input-background: #ffffff; /* Light input background */
   --input-border: #ccc; /* Light input border */
   --input-focus-border: #007bff; /* Focused input border color */
   --input-focus-shadow: rgba(0, 123, 255, 0.5); /* Focused input shadow */

@@ -1,8 +1,7 @@
-// app/page.js (Home Page)
-
 import styles from "./page.module.css";
 import UnderConstruction from "../components/UnderConstruction";
-
+import { Grid, Container, Typography, Box } from "@mui/material";
+import Hero from "../components/Hero.js"
 
 export const metadata = {
   title: "Your Vision, Our Code",
@@ -12,23 +11,33 @@ export const metadata = {
   },
 };
 
-export default function Home() {  const currentDate = new Date().getFullYear();
-
+export default function Home() {
+  const currentDate = new Date().getFullYear();
 
   // Check if the environment variable is set to 'true'
-  if (process.env.SHOW_UNDER_CONSTRUCTION === 'true') {
+  if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
     return <UnderConstruction />;
   }
-  
 
   return (
-    <div className={styles.container}>
+    <div>
+      {/* Full viewport container */}
+      <div className={styles.container}>
+      <Container maxWidth="lg">
+
+      <Hero />
+
+      </Container>
+
+
+      </div>
+
+      {/* Header below the main content */}
       <header className={styles.header}>
-        <h1>Your Vision, <br></br>Our Code</h1>
         <p>Custom web solutions, simplified.</p>
-       
       </header>
 
+      {/* Main content below the header */}
       <main className={styles.main}>
         <section className={styles.section}>
           <h2>Why Choose Us?</h2>
@@ -102,9 +111,7 @@ export default function Home() {  const currentDate = new Date().getFullYear();
             </div>
             <div className={styles.pricingCard}>
               <h3>Premium</h3>
-              <p>
-                The ultimate solution for enterprises and complex needs.
-              </p>
+              <p>The ultimate solution for enterprises and complex needs.</p>
             </div>
           </div>
           <button className={styles.ctaButton}>See Pricing Plans</button>
@@ -114,25 +121,11 @@ export default function Home() {  const currentDate = new Date().getFullYear();
           <h2>What Our Clients Say</h2>
           <blockquote className="blockquote">
             <p>
-              "The team made my vision a reality. My website is not only
-              beautiful but also functional and user-friendly."
+              "The team made my vision a reality. My website exceeded
+              expectations!"
             </p>
             <footer>– Happy Client</footer>
           </blockquote>
-          <blockquote>
-            <p>
-              "Fast, professional, and transparent. I couldn’t have asked for a
-              better experience."
-            </p>
-            <footer>– Another Happy Client</footer>
-          </blockquote>
-          <button className={styles.ctaButton}>Read More Reviews</button>
-        </section>
-
-        <section className={styles.section}>
-          <h2>Ready to Get Started?</h2>
-          <p>Let’s create something extraordinary together. Get in touch today!</p>
-          <button className={styles.ctaButton}>Contact Us</button>
         </section>
       </main>
     </div>

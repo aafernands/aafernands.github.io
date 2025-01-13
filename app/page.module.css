@@ -1,15 +1,21 @@
 /* Home Page Styles */
 .container {
-  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Take up the entire viewport height */
+  padding: 16px; /* Add some padding around the content */
 }
 
 .header {
-  text-align: center;
-  margin: 2rem 0;
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove margin to ensure it fits perfectly in the viewport */
+  padding-left: 16px; /* Add padding to the left */
+  width: 100%;
 }
 
 .header h1 {
-  font-size: 4rem;
+  font-size: 4rem; /* Adjust font size */
   color: var(--foreground);  /* Uses the foreground color based on the theme */
   text-align: left;
 }
@@ -21,25 +27,8 @@
   text-align: left;
 }
 
-/* Button Styles */
-.ctaButton {
-  background-color: var(--button-bg);  /* Yellow button background */
-  color: var(--foreground);  /* Text color based on theme */
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.ctaButton:hover {
-  background-color: var(--button-hover-bg);  /* Hover effect for button */
-}
-
-/* Main Section */
 .main {
-  margin: 2rem 0;
+  margin-top: 2rem; /* Adds margin to the top to separate it from the header */
 }
 
 .section {
@@ -58,46 +47,17 @@
   line-height: 1.6;
 }
 
-.pricingGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.pricingCard {
-  border: 1px solid #ddd;
+.ctaButton {
+  background-color: var(--button-bg);  /* Yellow button background */
+  color: var(--foreground);  /* Text color based on theme */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
   border-radius: 5px;
-  padding: 1rem;
-  text-align: center;
-  background-color: var(--background);  /* Background based on theme */
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-.pricingCard h3 {
-  font-size: 1.5rem;
-  color: var(--foreground);  /* Use theme-based foreground color */
-  margin-bottom: 0.5rem;
+.ctaButton:hover {
+  background-color: var(--button-hover-bg);  /* Hover effect for button */
 }
-
-.pricingCard p {
-  color: var(--foreground);  /* Use theme-based foreground color */
-}
-
-.blockquote {
-  border-left: 4px solid #0070f3;
-  padding-left: 1rem;
-  margin: 1rem 0;
-  color: var(--foreground);  /* Use theme-based foreground color */
-}
-
-.blockquote footer {
-  font-size: 0.9rem;
-  color: var(--foreground);  /* Use theme-based foreground color */
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  margin: 2rem 0;
-  color: var(--foreground);  /* Use theme-based foreground color */
-}
-
