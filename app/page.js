@@ -1,118 +1,58 @@
+"use client";
+
 import styles from "./page.module.css";
 import UnderConstruction from "../components/UnderConstruction";
-import { Grid, Container, Typography, Box } from "@mui/material";
-import Hero from "../components/Hero.js";
 import HeroSection from "../components/HeroSection.js";
 import PortfolioSection from "../components/PortfolioSection.js";
 import ReviewsSection from "../components/ReviewsSection.js";
+import ServicesSection from "../components/ServicesSection.js";
+import HowItWorksSection from "../components/HowItWorksSection.js";
+import {
+	Container,
+	ThemeProvider,
+	CssBaseline,
+	createTheme,
+} from "@mui/material";
+import { dark } from "@mui/material/styles/createPalette";
 
-export const metadata = {
-  title: "Your Vision, Our Code",
-  description: "Custom web solutions, simplified.",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+// Create a custom theme
+const darkTheme = createTheme({
+	palette: {
+		mode: "dark",
+		primary: {
+			main: "#171717",
+		},
+	},
+	typography: {
+		fontFamily: "'Montserrat', 'Ubuntu', sans-serif",
+	},
+});
 
 export default function Home() {
-  const currentDate = new Date().getFullYear();
+	if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
+		return <UnderConstruction />;
+	}
+	return (
+		// <ThemeProvider theme={darkTheme}>
+		// 	<Container sx={{ bgcolor: "red", px: "10px" }}>
+		// 		<h1>Hello World!</h1>
+		// 	</Container>
+		// </ThemeProvider>
 
-  // Check if the environment variable is set to 'true'
-  if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
-    return <UnderConstruction />;
-  }
-  return (
-    <Container
-      sx={{
-        bgcolor: "tomato",
-        height: "100vh",
-      }}
-    >
-      {" "}
-      {/* Full viewport container */}
-      <div>
-        <HeroSection />
-        <PortfolioSection />
-        <ReviewsSection />
-
-        {/* <Hero /> */}
-      </div>
-      {/* Header below the main content */}
-      <header className={styles.header}></header>
-      {/* Main content below the header */}
-      <main className={styles.main}>
-        <section className={styles.section}>
-          <h2>How It Works</h2>
-          <ol>
-            <li>
-              <strong>Share Your Vision:</strong> Use our intuitive request
-              system to tell us about your project.
-            </li>
-            <li>
-              <strong>Collaborate:</strong> Work directly with our team to
-              refine your ideas and see mockups.
-            </li>
-            <li>
-              <strong>Launch:</strong> Watch your website come to life, fully
-              optimized and ready to perform.
-            </li>
-          </ol>
-          <button className={styles.ctaButton}>Start Your Project Today</button>
-        </section>
-
-        <section className={styles.section}>
-          <h2>Features We Offer</h2>
-          <ul>
-            <li>
-              <strong>Responsive Design:</strong> Websites that look and work
-              perfectly on all devices.
-            </li>
-            <li>
-              <strong>SEO Optimization:</strong> Be found by the people who
-              matter most.
-            </li>
-            <li>
-              <strong>Custom Integrations:</strong> From e-commerce to
-              analytics, we make it happen.
-            </li>
-            <li>
-              <strong>Ongoing Support:</strong> We’re here for you, even after
-              launch.
-            </li>
-          </ul>
-          <button className={styles.ctaButton}>Explore Our Services</button>
-        </section>
-
-        <section className={styles.section}>
-          <h2>Pricing Made Simple</h2>
-          <div className={styles.pricingGrid}>
-            <div className={styles.pricingCard}>
-              <h3>Basic</h3>
-              <p>Perfect for small businesses and personal projects.</p>
-            </div>
-            <div className={styles.pricingCard}>
-              <h3>Pro</h3>
-              <p>For growing businesses that need advanced features.</p>
-            </div>
-            <div className={styles.pricingCard}>
-              <h3>Premium</h3>
-              <p>The ultimate solution for enterprises and complex needs.</p>
-            </div>
-          </div>
-          <button className={styles.ctaButton}>See Pricing Plans</button>
-        </section>
-
-        <section className={styles.section}>
-          <h2>What Our Clients Say</h2>
-          <blockquote className="blockquote">
-            <p>
-              "The team made my vision a reality. My website exceeded
-              expectations!"
-            </p>
-            <footer>– Happy Client</footer>
-          </blockquote>
-        </section>
-      </main>
-    </Container>
-  );
+		<ThemeProvider theme={darkTheme}>
+			<CssBaseline />
+			<Container
+				sx={{
+					bgcolor: "",
+					px: "10px",
+				}}
+			>
+				<HeroSection />
+				<PortfolioSection />
+				<ReviewsSection />
+				<ServicesSection />
+				<HowItWorksSection />
+			</Container>
+		</ThemeProvider>
+	);
 }

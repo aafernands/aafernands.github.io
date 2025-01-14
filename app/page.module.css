@@ -1,23 +1,4 @@
-/* Home Page Styles */
-.header {
-  text-align: left; /* Align text to the left */
-  margin: 0; /* Remove margin to ensure it fits perfectly in the viewport */
-  padding-left: 16px; /* Add padding to the left */
-  width: 100%;
-}
 
-.header h1 {
-  font-size: 4rem; /* Adjust font size */
-  color: var(--foreground);  /* Uses the foreground color based on the theme */
-  text-align: left;
-}
-
-.header p {
-  font-size: 1.2rem;
-  color: var(--foreground);  /* Uses the foreground color based on the theme */
-  margin: 1rem 0;
-  text-align: left;
-}
 
 .main {
   margin-top: 2rem; /* Adds margin to the top to separate it from the header */

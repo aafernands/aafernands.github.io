@@ -6,6 +6,7 @@ import {
 	Button,
 	Container,
 	Grid,
+	Box,
 } from "@mui/material";
 import Link from "next/link";
 import styles from "../styles/HeroSection.module.css";
@@ -14,14 +15,14 @@ const HeroSection = () => {
 	return (
 		<div className={styles.mainContainer}>
 			<Container className={styles.heroSection}>
-				<div className={styles.textContainer}>
+				<Box className={styles.textContainer}>
 					<Typography variant="h2" className={styles.heroTitle}>
 						Building your online presence with{" "}
 						<span className={styles.highlight}>creative and innovative</span>{" "}
 						solutions.
 					</Typography>
-				</div>
-				<div className={styles.imageContainer}>
+				</Box>
+				<Box className={styles.imageContainer}>
 					<Link href="/">
 						<img
 							src="./largeHero.png" // Make sure the image path is correct
@@ -29,7 +30,7 @@ const HeroSection = () => {
 							className={styles.heroImage}
 						/>
 					</Link>
-				</div>
+				</Box>
 			</Container>
 			<Grid container className={styles.features} spacing={2}>
 				<Grid item xs={12} lg={4}>
