@@ -1,21 +1,22 @@
 // app/layout.js
-import './globals.css'; // Your global styles
-import { Inter } from 'next/font/google'; // Example of a font import
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import "./globals.css"; // Your global styles
+import { Inter } from "next/font/google"; // Example of a font import
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import { Montserrat } from 'next/font/google'; // Another font import
-import { Ubuntu } from 'next/font/google'; // Import Ubuntu font
-import Navbar from '../components/NavBar'; // Import Navbar component
-import Footer from '../components/Footer'; // Import Footer component
+import { Montserrat } from "next/font/google"; // Another font import
+import { Ubuntu } from "next/font/google"; // Import Ubuntu font
+import Navbar from "../components/NavBar"; // Import Navbar component
+import Footer from "../components/Footer"; // Import Footer component
+import { Container, ThemeProvider, CssBaseline } from "@mui/material"; // Material UI components
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '700'],
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 const ubuntu = Ubuntu({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Specify font weights you need
+  subsets: ["latin"],
+  weight: ["400", "700"], // Specify font weights you need
 });
 
 export default function RootLayout({ children }) {
@@ -31,9 +32,15 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${montserrat.className} ${ubuntu.className}`}>
         <Navbar />
+        <Container
+          sx={{
+            bgcolor: "tomato",
+            height: "100vh",
+          }}
+        >
         {children} {/* This will render the content of each page */}
+      </Container>
         <Footer />
-
         {/* Injecting Tidio script */}
         <div
           dangerouslySetInnerHTML={{

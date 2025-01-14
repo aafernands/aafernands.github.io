@@ -49,6 +49,8 @@ const HeroSection = () => {
 						<strong>Full Transparency:</strong> Stay informed every step of the
 						way.
 					</Typography>
+					
+				
 				</Grid>
 			</Grid>
 		</div>
