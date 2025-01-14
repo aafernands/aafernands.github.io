@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/navbar.module.css"; // Import the CSS module
-import { AppBar, Toolbar, Button, Drawer, IconButton } from "@mui/material";
+import { Button, Drawer, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navbar() {
@@ -14,12 +14,6 @@ export default function Navbar() {
 	};
 
 	return (
-
-
-
-
-
-    
 		<nav className={styles.navbar}>
 			{/* Logo on the left */}
 			<div className={styles.logo}>
@@ -33,47 +27,6 @@ export default function Navbar() {
 				</Link>
 			</div>
 
-
-
-      <AppBar position="static" className={styles.appbar}>
-
-      <Toolbar className={styles.toolbar}>
-
-
-      <Link href="/">Home</Link>
-
-      <Button color="inherit" className={styles.navButton}>
-							How it Works
-						</Button>
-
-            <Button color="inherit" className={styles.navButton}>
-							How it Works
-						</Button>
-
-
-            <Button color="inherit" className={styles.navButton}>
-							How it Works
-						</Button>
-
-            <Button color="inherit" className={styles.navButton}>
-							How it Works
-						</Button>
-
-            <Button color="inherit" className={styles.navButton}>
-							How it Works
-						</Button>
-
-
-      </Toolbar>
-
-</AppBar>
-
-
-
-
-
-
-
 			{/* Desktop Menu on the right */}
 			<ul className={styles.navLinks}>
 				<li>
@@ -86,21 +39,23 @@ export default function Navbar() {
 					<Link href="/contact">Contact</Link>
 				</li>
 				<li>
-					<Link href="/testimonials">Testimonials</Link>
+					<Link href="#portfolio">Portfolio</Link>
+				</li>
+				<li>
+					<Link href="#reviews">Testimonials</Link>
 				</li>
 				<li>
 					<Link href="/pricing">Pricing</Link>
 				</li>
 			</ul>
 			<div className={styles.rightButtons}>
-				<Button variant="outlined" className={styles.bookButton}>
+				<Button target="black" href="https://calendly.com/fndslabs-15min-call/15min" variant="outlined" className={styles.bookButton}>
 					Book a Call
 				</Button>
-				<Button variant="contained" className={styles.ctaButton}>
+				<Button href="/pricing" variant="contained" className={styles.ctaButton}>
 					See Plans
 				</Button>
 			</div>
-
 			{/* Mobile Menu Icon */}
 			<IconButton className={styles.menuIcon} onClick={toggleDrawer}>
 				<MenuIcon />
@@ -120,7 +75,10 @@ export default function Navbar() {
 							<Link href="/contact">Contact</Link>
 						</li>
 						<li>
-							<Link href="/testimonials">Testimonials</Link>
+							<Link href="#portfolio">Portfolio</Link>
+						</li>
+						<li>
+							<Link href="#reviews">Testimonials</Link>
 						</li>
 						<li>
 							<Link href="/pricing">Pricing</Link>

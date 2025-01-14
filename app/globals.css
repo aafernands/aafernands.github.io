@@ -11,7 +11,7 @@
   --button-hover-bg: #0056b3; /* Button hover background */
   --button-text: #fff; /* Button text color */
   --success-message: #28a745; /* Success message color */
-  --testimonial-bg: rgba(0, 0, 0, 0.05); /* Light testimonial background */
+  --review-bg: rgba(0, 0, 0, 0.05); /* Light review background */
   --button-primary-hover: #616161; /* Button hover color */
 
 }
@@ -29,7 +29,7 @@
     --button-hover-bg: #005bb5; /* Button hover background */
     --button-text: #171717; /* Button text color */
     --success-message: #28a745; /* Success message color */
-    --testimonial-bg: rgba(255, 255, 255, 0.1); /* Dark testimonial background */
+    --review-bg: rgba(255, 255, 255, 0.1); /* Dark review background */
     --button-primary-hover: #999999; /* Dark mode button hover color */
   }
 }

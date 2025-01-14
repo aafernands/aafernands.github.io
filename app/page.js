@@ -3,6 +3,8 @@ import UnderConstruction from "../components/UnderConstruction";
 import { Grid, Container, Typography, Box } from "@mui/material";
 import Hero from "../components/Hero.js";
 import HeroSection from "../components/HeroSection.js";
+import PortfolioSection from "../components/PortfolioSection.js";
+import ReviewsSection from "../components/ReviewsSection.js";
 
 export const metadata = {
 	title: "Your Vision, Our Code",
@@ -19,12 +21,14 @@ export default function Home() {
 	if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
 		return <UnderConstruction />;
 	}
-
 	return (
 		<div>
 			{/* Full viewport container */}
-			<div >
+			<div>
 				<HeroSection />
+				< PortfolioSection />
+				< ReviewsSection />
+
 				{/* <Hero /> */}
 			</div>
 

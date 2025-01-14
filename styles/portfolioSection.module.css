@@ -1,0 +1,99 @@
+.portfolioSection {
+	padding: 3rem 1rem;
+	text-align: center;
+	color: red;
+	min-height: 100vh; /* Ensure the section covers the full viewport height */
+
+	background-color: #171717;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-start; /* Align content to the top */
+	position: relative;
+
+	flex-direction: column;
+	position: relative;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	text-align: left;
+	padding: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+}
+
+.description {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	color: #ccc;
+	text-align: left;
+}
+
+.slideshowContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.arrowButton {
+	color: #fff;
+}
+
+.slide {
+	text-align: center;
+	max-width: 600px;
+}
+
+.projectImage {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.projectTitle {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.projectDescription {
+	font-size: 1rem;
+	color: #ccc;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.activeDot {
+	background-color: #ff3131;
+}
+
+.seeMoreButton {
+	background: linear-gradient(to right, #ff3131, #006c61);
+	color: #fff;
+	text-transform: none;
+	margin-top: 2rem;
+	padding: 0.5rem 1.5rem; /* Add padding for better appearance */
+	border-radius: 4px; /* Add some border radius */
+	width: auto; /* Ensure the button does not stretch */
+	max-width: 200px; /* Optional: Set a max width */
+	align-self: center; /* Center the button horizontally within the flex container */
+	text-align: center; /* Center the text inside the button */
+}

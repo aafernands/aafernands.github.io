@@ -5,31 +5,11 @@
 	position: relative;
 	background-color: #171717; /* Optional fallback color */
   }
-  
-  .appbar {
-	background: transparent;
-	box-shadow: none;
-  }
-  
-  .toolbar {
-	display: flex;
-	justify-content: space-between;
-  }
-  
+    
   .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #fff;
-  }
-  
-  .navLinks {
-	display: flex;
-	gap: 1rem;
-  }
-  
-  .navButton {
-	color: #fff;
-	text-transform: none;
   }
   
   .rightButtons {
@@ -53,7 +33,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
+	height: 60%;
 	color: #fff;
 	padding: 2rem;
   }
@@ -74,7 +54,7 @@
   }
   
   .features {
-	padding: 20px;
+	padding: 40px;
   }
 
   .featureList {
@@ -97,3 +77,9 @@
 	height: auto;
   }
   
+  /* Style for strong tags within heroDescription */
+.heroDescription strong {
+	color: orange; /* Set the text color to orange */
+	font-weight: bold; /* Make the text bold */
+	font-size: 1.1em; /* Slightly increase the font size */
+  }
