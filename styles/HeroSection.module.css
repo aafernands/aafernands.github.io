@@ -73,11 +73,18 @@
 	align-items: center;
   }
   
+ .heroImage {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* Hide the image on small screens */
+@media (max-width: 768px) {
   .heroImage {
-	width: 100%;
-	max-width: 600px;
-	height: auto;
+    display: none;
   }
+}
   
   /* Style for strong tags within heroDescription */
 .heroDescription strong {

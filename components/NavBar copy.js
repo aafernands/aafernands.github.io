@@ -1,20 +1,18 @@
 "use client";
 
-import { useRouter } from "next/navigation"; // Correct import
+import Link from "next/navigation";
 import { useState } from "react";
-import styles from "../styles/navbar.module.css";
+import styles from "../styles/navbar.module.css"; // Import the CSS module
 import { Button, Drawer, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navbar() {
-	const router = useRouter(); // Initialize the router
 	const [open, setOpen] = useState(false);
 
 	// Toggle the drawer state
 	const toggleDrawer = () => {
 		setOpen(!open);
 	};
-
 	// Handle navigation and close the drawer
 	const handleNavigation = (path) => {
 		setOpen(false); // Close the drawer
@@ -23,7 +21,7 @@ export default function Navbar() {
 
 	return (
 		<nav className={styles.navbar}>
-			{/* Logo */}
+			{/* Logo on the left */}
 			<div className={styles.logo}>
 				<a onClick={() => handleNavigation("/")} style={{ cursor: "pointer" }}>
 					<img
@@ -34,8 +32,9 @@ export default function Navbar() {
 				</a>
 			</div>
 
-			{/* Desktop Menu */}
+			{/* Desktop Menu on the right */}
 			<ul className={styles.navLinks}>
+
 				{[
 					{ name: "Home", path: "/" },
 					{ name: "About", path: "/about" },
@@ -54,15 +53,15 @@ export default function Navbar() {
 						</a>
 					</li>
 				))}
+		
+
 			</ul>
-			{/* Buttons */}
 			<div className={styles.rightButtons}>
 				<Button
-					target="_blank"
+					target="black"
 					href="https://calendly.com/fndslabs-15min-call/15min"
 					variant="outlined"
 					className={styles.bookButton}
-					aria-label="Book a Call"
 				>
 					Book a Call
 				</Button>
@@ -70,7 +69,6 @@ export default function Navbar() {
 					href="/pricing"
 					variant="contained"
 					className={styles.ctaButton}
-					aria-label="See Plans"
 				>
 					See Plans
 				</Button>

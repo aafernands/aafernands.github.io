@@ -38,6 +38,8 @@
 /* Global styles for body */
 html,
 body {
+  margin: 0;
+  padding-top: 33px;
   max-width: 100vw;
   overflow-x: hidden;
   background: var(--background);
