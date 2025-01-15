@@ -30,7 +30,7 @@ const HeroSection = ({ isDarkMode }) => {
 					>
 						Building your online presence with{" "}
 						<span className={styles.highlight}>creative and innovative</span>{" "}
-						solutions.
+						solutions!
 					</Typography>
 				</Box>
 				<Box className={styles.imageContainer}>
