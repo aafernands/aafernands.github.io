@@ -30,7 +30,7 @@ const Footer = ({ isDarkMode }) => {
       <div className={styles.logo}>
         <Link href="/">
           <img
-            src={isDarkMode ? "../logoWhite.png" : "../logoBlack.png"} // Dynamic logo
+            src={isDarkMode ? "../logoBlack.png" : "../logoWhite.png"} // Dynamic logo
             alt="FNDS Labs Logo"
             className={styles.logoImage}
           />
