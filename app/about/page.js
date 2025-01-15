@@ -1,5 +1,5 @@
 import Link from "next/link"; // Import Link for navigation (e.g., for the button)
-import styles from "../../styles/about.module.css"; // Import the CSS module for the About page styling
+import styles from "./about.module.css"; // Import the CSS module for the About page styling
 
 const About = () => {
 	const currentYear = new Date().getFullYear();

@@ -1,28 +1,52 @@
-// Importing necessary Material UI components and icons
-import { Facebook, Instagram } from '@mui/icons-material';
+"use client";
+
+import { useRouter } from "next/navigation"; // Correct import
 import Link from 'next/link';
+import { Facebook, Instagram } from '@mui/icons-material';
 import styles from "../styles/footer.module.css"; // Import the CSS module
+import { Typography } from "@mui/material";
 
 const Footer = () => {
+  const router = useRouter(); // Initialize the router
+
+  // Handle navigation
+  const handleNavigation = (path) => {
+    router.push(path); // Navigate to the path
+  };
+
   const currentDate = new Date().getFullYear(); // Get the current year dynamically
 
   return (
     <footer className={styles.footer}>
       {/* Logo Section */}
       <div className={styles.logo}>
-      <Link href="/">
-        <img src="../logoBlack.png" alt="FNDS Labs Logo" className={styles.logoImage} />
+        <Link href="/">
+          <img src="../logoBlack.png" alt="FNDS Labs Logo" className={styles.logoImage} />
         </Link>
-
       </div>
 
       {/* Menu Links */}
       <div className={styles.menuLinks}>
-        <a href="#reviews">Testimonials</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="/contact">Contact</a>
+        <ul>
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Contact", path: "/contact" },
+            { name: "Portfolio", path: "/#portfolio" },
+            { name: "Testimonials", path: "/#reviews" },
+            { name: "Pricing", path: "/pricing" },
+          ].map((item) => (
+            <li key={item.name}>
+              <a
+                onClick={() => handleNavigation(item.path)}
+                aria-label={item.name}
+                style={{ cursor: "pointer" }}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Social Media Links */}
@@ -36,7 +60,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <p>© {currentDate} FNDS Labs. All rights reserved.</p>
+      <Typography variant="p">© {currentDate} FNDS Labs. All rights reserved.</Typography>
     </footer>
   );
 };

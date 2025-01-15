@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/contact.module.css";
+import styles from "./contact.module.css";
 
 export default function Contact() {
 	const [formSubmitted, setFormSubmitted] = useState(false);

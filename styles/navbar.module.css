@@ -1,138 +1,98 @@
-/* Navbar.module.css */
 .navbar {
-	  position: fixed; /* Fix the navbar at the top */
-  top: 0; /* Align it to the top of the viewport */
-  left: 0; /* Align it to the left edge */
-  width: 100%; /* Make it span the full width of the viewport */
-  z-index: 1000; /* Ensure it stays above other elements */
-  background-color: #000000; /* Background color for visibility */
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
-
-}
-
-.appbar {
-	background: transparent;
-	box-shadow: none;
-}
-
-.toolbar {
+	z-index: 1000; /* Ensure it stays above other elements */
+	background-color: transparent; /* Transparent background for AppBar */
+	color: white;
 	display: flex;
 	justify-content: space-between;
-}
-
-.rightButtons {
+	align-items: center;
+	padding: 10px 20px;
+  }
+  
+  .appbar {
+	background: black;
+	box-shadow: none;
+  }
+  
+  .toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .rightButtons {
 	display: flex;
 	gap: 1rem;
-}
-.navLinks {
+  }
+  
+  .navLinks {
 	display: flex;
 	gap: 1rem;
-}
-.navButton {
-	color: #fff;
-	text-transform: none;
-}
-.bookButton {
-	border-color: #fff;
-	color: #fff;
-	text-transform: none;
-}
-
-.ctaButton {
-	background: linear-gradient(to right, #ff3131, #006c61);
-	color: #fff;
-	text-transform: none;
-}
-
-.logo {
-	font-size: 24px;
-	font-weight: bold;
-}
-
-.navLinks {
-	list-style: none;
-	display: flex;
-	gap: 20px;
-}
-
-.navLinks li {
+  }
+  
+  .navLinks li {
 	display: inline;
-}
-
-.navLinks a {
+  }
+  
+  .navLinks a {
 	color: white;
 	text-decoration: none;
 	font-size: 16px;
-}
-
-.navLinks a:hover {
+  }
+  
+  .navLinks a:hover {
 	text-decoration: underline;
-}
-.navButton {
-	color: #fff;
-	text-transform: none;
-}
-
-.rightButtons {
-	display: flex;
-	gap: 1rem;
-}
-
-.bookButton {
+  }
+  
+  .bookButton {
 	border-color: #fff;
 	color: #fff;
 	text-transform: none;
-}
-
-.ctaButton {
-	background: linear-gradient(to right, #4f46e5, #3b82f6);
+  }
+  
+  .ctaButton {
+	background: linear-gradient(to right, #ff3131, #006c61);
 	color: #fff;
 	text-transform: none;
-}
-
-.menuIcon {
+  }
+  
+  .menuIcon {
 	display: none;
 	color: rgb(255, 255, 255);
-}
-
-.drawerMenu {
+  }
+  
+  .drawerMenu {
 	padding: 40px;
 	background-color: #000000;
 	height: 100vh;
-}
-
-.drawerMenu ul {
+  }
+  
+  .drawerMenu ul {
 	list-style: none;
 	padding: 0;
-}
-
-.drawerMenu li {
+  }
+  
+  .drawerMenu li {
 	margin: 10px 0;
-}
-
-.drawerMenu a {
+  }
+  
+  .drawerMenu a {
 	color: white;
 	text-decoration: none;
 	font-size: 18px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
 	.navLinks {
-		display: none;
+	  display: none;
 	}
-
+  
 	.menuIcon {
-		display: block;
+	  display: block;
 	}
-}
-
-.logoImage {
+  }
+  
+  .logoImage {
 	height: auto; /* Maintain aspect ratio */
 	max-height: 30px; /* Adjust based on your navbar height */
 	width: auto; /* Ensure the width adjusts proportionally */
@@ -141,22 +101,5 @@
 	margin: 0 auto; /* Center the logo if necessary */
 	display: block; /* Ensure proper alignment */
 	object-fit: contain; /* Keep the logo within bounds */
-}
-
-.mainContainer {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	background-color: #171717; /* Optional fallback color */
-}
-
-.appbar {
-	background: transparent;
-	box-shadow: none;
-}
-
-.toolbar {
-	display: flex;
-	justify-content: space-between;
-}
+  }
+  

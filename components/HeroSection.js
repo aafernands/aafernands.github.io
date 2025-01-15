@@ -38,6 +38,7 @@ const HeroSection = () => {
 						<strong>Custom Designs:</strong> Your website should be as unique as
 						your brand.
 					</Typography>
+					
 				</Grid>
 				<Grid item xs={12} lg={4}>
 					<Typography className={styles.heroDescription}>

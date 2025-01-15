@@ -11,10 +11,23 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 60%;
-	color: #fff;
 	padding: 2rem;
   }
     
+
+  /* Style for strong tags within heroDescription */
+  .heroDescription strong {
+	color: orange; /* Set the text color to orange */
+	font-weight: bold; /* Make the text bold */
+	font-size: 1.1em; /* Slightly increase the font size */
+  }
+
+  .heroTitle {
+
+	font-size: 3rem;
+	font-weight: bold;
+  }
+  
   .logo {
 	font-size: 1.2rem;
 	font-weight: bold;
@@ -44,10 +57,7 @@
 	max-width: 600px;
   }
   
-  .heroTitle {
-	font-size: 3rem;
-	font-weight: bold;
-  }
+  
   
   .highlight {
 	background: linear-gradient(to right, #ff3131, #44ddce);
@@ -86,9 +96,3 @@
   }
 }
   
-  /* Style for strong tags within heroDescription */
-.heroDescription strong {
-	color: orange; /* Set the text color to orange */
-	font-weight: bold; /* Make the text bold */
-	font-size: 1.1em; /* Slightly increase the font size */
-  }

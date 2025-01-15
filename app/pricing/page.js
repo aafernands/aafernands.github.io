@@ -14,7 +14,7 @@ import {
 	faPaintRoller,
 	faBoltLightning,
 } from "@fortawesome/free-solid-svg-icons";
-import styles from "../../styles/pricing.module.css"; // Ensure the correct path to your CSS file
+import styles from "./pricing.module.css"; // Ensure the correct path to your CSS file
 
 const Pricing = () => {
 	const basicFeatures = [
