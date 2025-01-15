@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	padding-top: 80px;
   }
 
 
@@ -24,7 +25,7 @@
 
   .heroTitle {
 
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: bold;
   }
   
@@ -60,7 +61,7 @@
   
   
   .highlight {
-	background: linear-gradient(to right, #ff3131, #44ddce);
+	background: linear-gradient(to right, #ff3131, #fbbd02);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   }

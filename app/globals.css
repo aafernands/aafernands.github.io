@@ -2,9 +2,9 @@
 :root {
   --background: #f5f5f5; /* Light background */
   --foreground: #171717; /* Dark text for light mode */
-  --form-background: #171717; /* Light form background */
+  --form-background: #ffffff; /* Light form background */
   --input-background: #ffffff; /* Light input background */
-  --input-border: #ccc; /* Light input border */
+  --input-border: #55555555; /* Light input border */
   --input-focus-border: #007bff; /* Focused input border color */
   --input-focus-shadow: rgba(0, 123, 255, 0.5); /* Focused input shadow */
   --button-bg: #f6ce2f; /* Yellow button background */
@@ -17,16 +17,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #171717; /* Dark background */
-    --foreground: #ededed; /* Light text for dark mode */
+    --background: #121212; /* Dark background */
+    --foreground: #ffffff; /* Light text for dark mode */
     --form-background: #333; /* Dark form background */
     --input-background: #444; /* Dark input background */
-    --input-border: #555; /* Dark input border */
-    --input-focus-border: #007bff; /* Focused input border color */
+    --input-border: #ffffff; /* Dark input border */
+    --input-focus-border: #aaaaaa; /* Focused input border color */
     --input-focus-shadow: rgba(0, 123, 255, 0.5); /* Focused input shadow */
-    --button-bg: #f7b500; /* Lighter yellow for dark mode */
+    --button-bg: #90caf9; /* Lighter yellow for dark mode */
     --button-hover-bg: #005bb5; /* Button hover background */
-    --button-text: #171717; /* Button text color */
+    --button-text: #00000000; /* Button text color */
     --success-message: #28a745; /* Success message color */
     --review-bg: rgba(255, 255, 255, 0.1); /* Dark review background */
     --button-primary-hover: #999999; /* Dark mode button hover color */

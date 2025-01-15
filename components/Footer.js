@@ -17,6 +17,8 @@ const Footer = ({ isDarkMode }) => {
   const currentDate = new Date().getFullYear(); // Get the current year dynamically
 
   return (
+
+   
     <Box
       component="footer"
       sx={{
@@ -39,7 +41,7 @@ const Footer = ({ isDarkMode }) => {
 
       {/* Menu Links */}
       <div className={styles.menuLinks}>
-        <ul>
+        <ul >
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
@@ -89,6 +91,8 @@ const Footer = ({ isDarkMode }) => {
         © {currentDate} FNDS Labs. All rights reserved.
       </Typography>
     </Box>
+
+
   );
 };
 

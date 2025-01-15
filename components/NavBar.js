@@ -78,42 +78,13 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
 					))}
 				</ul>
 
-				{/* Buttons */}
-				<div className={styles.rightButtons}>
-					<Button
-						target="_blank"
-						href="https://calendly.com/fndslabs-15min-call/15min"
-						variant="outlined"
-						sx={{
-							color: isDarkMode ? "#ffffff" : "#000000",
-							borderColor: isDarkMode ? "#ffffff" : "#000000",
-							"&:hover": {
-								backgroundColor: isDarkMode ? "#333333" : "#e0e0e0",
-							},
-						}}
-						aria-label="Book a Call"
-					>
-						Book a Call
-					</Button>
-					<Button
-						href="/pricing"
-						variant="contained"
-						sx={{
-							backgroundColor: isDarkMode ? "#333333" : "#000000",
-							color: isDarkMode ? "#ffffff" : "#ffffff",
-							"&:hover": {
-								backgroundColor: isDarkMode ? "#444444" : "#222222",
-							},
-						}}
-						aria-label="See Plans"
-					>
-						See Plans
-					</Button>
-				</div>
+				
 
 				{/* Mobile Menu Icon */}
 				<IconButton className={styles.menuIcon} onClick={toggleDrawer}>
-					<MenuIcon />
+					<MenuIcon sx={{
+		color: isDarkMode ? "#ffffff" : "#000000", // Dynamic color
+	}} />
 				</IconButton>
 			</Toolbar>
 
