@@ -33,7 +33,7 @@ const projects = [
 	},
 ];
 
-const PortfolioSection = () => {
+const PortfolioSection = (isDarkMode) => {
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	// Automatically slide every 5 seconds

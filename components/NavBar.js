@@ -54,7 +54,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
 				</div>
 
 				{/* Theme Toggle */}
-				<Switch checked={isDarkMode} onChange={toggleTheme} />
+				{/* <Switch checked={isDarkMode} onChange={toggleTheme} /> */}
 
 				{/* Desktop Menu */}
 				<ul className={styles.navLinks}>
