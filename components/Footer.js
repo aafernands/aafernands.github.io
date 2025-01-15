@@ -4,9 +4,9 @@ import { useRouter } from "next/navigation"; // Correct import
 import Link from 'next/link';
 import { Facebook, Instagram } from '@mui/icons-material';
 import styles from "../styles/footer.module.css"; // Import the CSS module
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   const router = useRouter(); // Initialize the router
 
   // Handle navigation
@@ -17,11 +17,23 @@ const Footer = () => {
   const currentDate = new Date().getFullYear(); // Get the current year dynamically
 
   return (
-    <footer className={styles.footer}>
+    <Box
+      component="footer"
+      sx={{
+        backgroundColor: isDarkMode ? "#1e1e1e" : "#f5f5f5", // Dynamic background
+        color: isDarkMode ? "#ffffff" : "#000000", // Dynamic text color
+        padding: "20px",
+        textAlign: "center",
+      }}
+    >
       {/* Logo Section */}
       <div className={styles.logo}>
         <Link href="/">
-          <img src="../logoBlack.png" alt="FNDS Labs Logo" className={styles.logoImage} />
+          <img
+            src={isDarkMode ? "../logoWhite.png" : "../logoBlack.png"} // Dynamic logo
+            alt="FNDS Labs Logo"
+            className={styles.logoImage}
+          />
         </Link>
       </div>
 
@@ -40,7 +52,10 @@ const Footer = () => {
               <a
                 onClick={() => handleNavigation(item.path)}
                 aria-label={item.name}
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: isDarkMode ? "#90caf9" : "#1976d2", // Dynamic link color
+                }}
               >
                 {item.name}
               </a>
@@ -51,17 +66,29 @@ const Footer = () => {
 
       {/* Social Media Links */}
       <div className={styles.socialMedia}>
-        <a href="https://www.facebook.com/fndslabs/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com/fndslabs/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: isDarkMode ? "#90caf9" : "#1976d2" }} // Dynamic icon color
+        >
           <Facebook className={styles.icon} />
         </a>
-        <a href="https://www.instagram.com/fnds.labs" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/fnds.labs"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: isDarkMode ? "#90caf9" : "#1976d2" }} // Dynamic icon color
+        >
           <Instagram className={styles.icon} />
         </a>
       </div>
 
       {/* Copyright */}
-      <Typography variant="p">© {currentDate} FNDS Labs. All rights reserved.</Typography>
-    </footer>
+      <Typography variant="body2" sx={{ marginTop: "10px" }}>
+        © {currentDate} FNDS Labs. All rights reserved.
+      </Typography>
+    </Box>
   );
 };
 

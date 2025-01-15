@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import "./globals.css"; // Import global CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Ubuntu, Montserrat, Inter } from "next/font/google";
+
+
 import {
 	Container,
 	ThemeProvider,
@@ -73,7 +75,7 @@ export default function RootLayout({ children }) {
 					>
 						{children}
 					</Container>
-					<Footer />
+					<Footer isDarkMode={isDarkMode} />
 				</ThemeProvider>
 			</body>
 		</html>
