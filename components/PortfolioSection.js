@@ -54,8 +54,8 @@ const PortfolioSection = (isDarkMode) => {
 
 	return (
 		<Container id="portfolio" className={styles.portfolioSection}>
-			<Typography variant="h4" className={styles.title}>
-				portfolio
+			<Typography variant="h2" className={styles.title}>
+				Portfolio
 			</Typography>
 			<Typography variant="body1" className={styles.description}>
 				Explore some of our creative and innovative projects. Each project is

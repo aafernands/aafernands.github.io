@@ -17,8 +17,8 @@ const PortfolioSection = () => {
 
 	return (
 		<Container id="reviews" className={styles.reviewsSection}>
-			<Typography variant="h4" className={styles.title}>
-				testimonials
+			<Typography variant="h2" className={styles.title}>
+			Testimonials
 			</Typography>
 			<Typography variant="body1" className={styles.description}>
 			See what our customers are saying about us!
