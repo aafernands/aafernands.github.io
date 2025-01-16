@@ -12,7 +12,6 @@ import Link from "next/link";
 import styles from "../styles/HeroSection.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import largeHero from "../public/largeHero.png";
 
 const HeroSection = () => {
   return (
@@ -42,7 +41,7 @@ const HeroSection = () => {
         <Box className={styles.imageContainer}>
           <Link href="/">
             <img
-              src="./largeHero.png" // Make sure the image path is correct
+              src="./largeHero.png" // Ensure the image path is correct
               alt="Hero Image"
               className={styles.heroImage}
             />
@@ -56,18 +55,17 @@ const HeroSection = () => {
             <FontAwesomeIcon
               icon={faCircleCheck}
               style={{
-                color: "red",
+                color: "#90CAF9",
               }}
             />
-
             <Typography
               sx={{
                 fontSize: {
                   xs: "1.1rem",
                   sm: "1.5rem",
                   md: "1.8rem",
-                  margin: "-10px 0px 0px 10px",
                 },
+                margin: "-10px 0px 0px 10px",
               }}
               className={styles.heroDescription}
             >
@@ -82,7 +80,7 @@ const HeroSection = () => {
             <FontAwesomeIcon
               icon={faCircleCheck}
               style={{
-                color: "orange",
+                color: "#90CAF9",
               }}
             />
             <Typography
@@ -91,8 +89,8 @@ const HeroSection = () => {
                   xs: "1.1rem",
                   sm: "1.5rem",
                   md: "1.8rem",
-                  margin: "-10px 0px 0px 10px",
                 },
+                margin: "-10px 0px 0px 10px",
               }}
               className={styles.heroDescription}
             >
@@ -107,7 +105,7 @@ const HeroSection = () => {
             <FontAwesomeIcon
               icon={faCircleCheck}
               style={{
-                color: "blue",
+                color: "#90CAF9",
               }}
             />
             <Typography
@@ -116,8 +114,8 @@ const HeroSection = () => {
                   xs: "1.1rem",
                   sm: "1.5rem",
                   md: "1.8rem",
-                  margin: "-10px 0px 0px 10px",
                 },
+                margin: "-10px 0px 0px 10px",
               }}
               className={styles.heroDescription}
             >
@@ -126,28 +124,45 @@ const HeroSection = () => {
             </Typography>
           </Box>
         </Grid>
-        <Container className={styles.heroSection}>
-          <div className={styles.rightButtons}>
-            {/* First Button: Book a Call */}
-            <Button
-              target="_blank"
-              href="https://calendly.com/fndslabs-15min-call/15min"
-              variant="outlined"
-              aria-label="Book a Call"
-            >
-              Book a Call
-            </Button>
-
-            {/* Second Button: See Plans */}
-            <Button href="/pricing" variant="contained" aria-label="See Plans">
-              See Plans
-            </Button>
-          </div>
-        </Container>
       </Grid>
+
+      <Container className={styles.heroSection}>
+        <Box className={styles.rightButtons}>
+          {/* First Button: Book a Call */}
+          <Button
+            target="_blank"
+            href="https://calendly.com/fndslabs-15min-call/15min"
+            variant="outlined"
+            aria-label="Book a Call"
+            sx={{
+              margin: "0 10px",
+              color: "var(--button-textOutlined, #000)",
+              borderColor: "var(--button-border, #000)",
+            }}
+          >
+            Book a Call
+          </Button>
+
+          {/* Second Button: Get Started */}
+          <Button
+            href="/get-started"
+            variant="contained"
+            aria-label="Get Started"
+            sx={{
+              margin: "0 10px",
+              backgroundColor: "var(--button-bg, #1976d2)",
+              color: "var(--button-text, #fff)",
+              "&:hover": {
+                backgroundColor: "var(--button-bg-hover, #1565c0)",
+              },
+            }}
+          >
+            Get Started
+          </Button>
+        </Box>
+      </Container>
     </div>
   );
-  console.log("isDarkMode:", isDarkMode);
 };
 
 export default HeroSection;

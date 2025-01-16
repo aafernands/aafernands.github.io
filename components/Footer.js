@@ -18,7 +18,6 @@ const Footer = ({ isDarkMode }) => {
 
   return (
     <Box
-      component="footer"
       sx={{
         backgroundColor: isDarkMode ? "black" : "white", // Dynamic background
         color: isDarkMode ? "#ffffff" : "#000000", // Dynamic text color
