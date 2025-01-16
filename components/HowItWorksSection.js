@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import styles from "../styles/howItWorksSection.module.css"; // Import the CSS module
+import Accordion from "../components/Accordion.js";
 
 const PortfolioSection = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,6 +24,11 @@ const PortfolioSection = () => {
 			<Typography variant="body1" className={styles.description}>
 			See what our customers are saying about us!
 			</Typography>
+
+
+			<Accordion />
+
+
 			<main className={styles.main}>
 				<section className={styles.section}>
 					<h2>How It Works</h2>
