@@ -9,7 +9,8 @@ export default function MyDocument() {
       <body>
         <Main />
         <NextScript />
-        
+
+\        
         {/* Tidio script injected using dangerouslySetInnerHTML */}
         <div
           dangerouslySetInnerHTML={{

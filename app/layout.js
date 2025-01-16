@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import "./globals.css"; // Import global CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Ubuntu, Montserrat, Inter } from "next/font/google";
+import { Ubuntu, Montserrat } from "next/font/google";
 import {
   Container,
   ThemeProvider,
@@ -13,90 +13,60 @@ import {
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-// Font configurations
-const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-const ubuntu = Ubuntu({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false); // State for dark mode toggle
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode); // Toggle between dark and light mode
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   const theme = createTheme({
     palette: {
-      mode: isDarkMode ? "dark" : "light", // Dynamic theme based on isDarkMode
+      mode: isDarkMode ? "dark" : "light",
+      primary: {
+        main: isDarkMode ? "#90caf9" : "#1976d2",
+      },
+      background: {
+        default: isDarkMode ? "#121212" : "#ffffff",
+        paper: isDarkMode ? "#1e1e1e" : "#f5f5f5",
+      },
     },
     typography: {
       fontFamily: "'Montserrat', 'Ubuntu', sans-serif",
     },
   });
 
-  // Update CSS variables based on theme mode
   useEffect(() => {
     const root = document.documentElement;
-    const isDark = isDarkMode;
+    const themeVars = isDarkMode
+      ? {
+          "--background": "#121212",
+          "--foreground": "#ededed",
+          "--form-background": "#333",
+          "--input-background": "#444",
+          "--input-border": "#ffffff",
+          "--button-bg": "#1976d2",
+          "--button-hover-bg": "#005bb5",
+          "--button-text": "#ffffff",
+          "--review-bg": "rgba(255, 255, 255, 0.1)",
+        }
+      : {
+          "--background": "#ffffff",
+          "--foreground": "#171717",
+          "--form-background": "#ffffff",
+          "--input-background": "#ffffff",
+          "--input-border": "#55555555",
+          "--button-bg": "#90caf9",
+          "--button-hover-bg": "#0056b3",
+          "--button-text": "#000000",
+          "--review-bg": "rgba(0, 0, 0, 0.05)",
+        };
 
-    // Set CSS variables dynamically based on theme
-    root.style.setProperty(
-      "--background",
-      isDark ? "black" : "white"
-    );
-    root.style.setProperty(
-      "--foreground",
-      isDark ? "#ededed" : "#171717"
-    );
-    root.style.setProperty(
-      "--form-background",
-      isDark ? "#333" : "#ffffff"
-    );
-    root.style.setProperty(
-      "--input-background",
-      isDark ? "#444" : "#ffffff"
-    );
-    root.style.setProperty(
-      "--input-border",
-      isDark ? "#ffffff" : "#55555555"
-    );
-    root.style.setProperty(
-      "--input-focus-border",
-      isDark ? "#aaaaaa" : "#007bff"
-    );
-    root.style.setProperty(
-      "--input-focus-shadow",
-      "rgba(0, 123, 255, 0.5)"
-    );
-    root.style.setProperty(
-      "--button-bg",
-      isDark ? "red" : "blue"
-    );
-    root.style.setProperty(
-      "--button-hover-bg",
-      isDark ? "#005bb5" : "#0056b3"
-    );
-    root.style.setProperty(
-      "--button-text",
-      isDark ? "#00000000" : "#fff"
-    );
-    root.style.setProperty(
-      "--success-message",
-      "#28a745"
-    );
-    root.style.setProperty(
-      "--review-bg",
-      isDark ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.05)"
-    );
-    root.style.setProperty(
-      "--button-primary-hover",
-      isDark ? "#999999" : "#616161"
+    Object.entries(themeVars).forEach(([key, value]) =>
+      root.style.setProperty(key, value)
     );
   }, [isDarkMode]);
 
@@ -105,23 +75,15 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script
-          src="//code.tidio.co/sf7zqeagqkbig5d56iqlot3fq8nygg0k.js"
-          async
-        ></script>
       </head>
       <body className={`${montserrat.className} ${ubuntu.className}`}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-          <Container
-            sx={{
-              backgroundColor: isDarkMode ? "#171717" : "#F7F7F7",
-            }}
-          >
+          <Container>
             {children}
           </Container>
-          <Footer isDarkMode={isDarkMode} />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

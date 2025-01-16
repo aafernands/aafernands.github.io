@@ -14,17 +14,7 @@ export default function Home(isDarkMode) {
     return <UnderConstruction />;
   }
   return (
-    // <ThemeProvider theme={darkTheme}>
-    // 	<Container sx={{ bgcolor: "red", px: "10px" }}>
-    // 		<h1>Hello World!</h1>
-    // 	</Container>
-    // </ThemeProvider>
-
-    <Container
-      sx={{
-			// backgroundColor: "red",
-      }}
-    >
+    <Container>
       <HeroSection />
       <PortfolioSection />
       <ReviewsSection />

@@ -21,7 +21,8 @@
 .description {
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
-	color: #ccc;
+	color: var(--foreground);
+	text-align: left;
 }
 
 .slideshowContainer {

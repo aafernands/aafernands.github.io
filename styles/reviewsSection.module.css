@@ -1,14 +1,10 @@
 /* Reviews Page Styles */
-.servicesSection {
+.reviewsSection {
 	padding: 3rem 1rem;
-	text-align: center;
-	color: red;
-	min-height: 100vh; /* Ensure the section covers the full viewport height */
-	background-color: #171717;
+	text-align: left;
+	color: #fff;
 	height: 100vh;
 	display: flex;
-	justify-content: flex-start; /* Align content to the top */
-	position: relative;
 	flex-direction: column;
 	position: relative;
 }
@@ -19,14 +15,14 @@
 	margin-bottom: 1rem;
 	text-align: left;
 	padding: 20px;
-	font-family: "Roboto", sans-serif;
 	font-weight: 100;
+	color: var(--foreground)
 }
 
 .description {
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
-	color: #ccc;
+	color: var(--foreground);
 	text-align: left;
 }
 
