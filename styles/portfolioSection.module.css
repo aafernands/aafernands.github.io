@@ -1,8 +1,7 @@
 .portfolioSection {
 	padding: 3rem 1rem;
-	text-align: center;
+	text-align: left;
 	color: #fff;
-	background-color: #171717;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -15,9 +14,8 @@
 	margin-bottom: 1rem;
 	text-align: left;
 	padding: 20px;
-	font-family: "Roboto", sans-serif;
 	font-weight: 100;
-	color: #ff3131 !important;
+	color: var(--foreground)
 }
 
 .description {

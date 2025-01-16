@@ -93,7 +93,12 @@ const PortfolioSection = (isDarkMode) => {
 					/>
 				))}
 			</Box>
-			<Button target="blank" href="https://figma.com" variant="contained" className={styles.seeMoreButton}>
+			<Button
+				target="blank"
+				href="https://figma.com"
+				variant="contained"
+				className={styles.seeMoreButton}
+			>
 				See More Projects
 			</Button>
 		</Container>
