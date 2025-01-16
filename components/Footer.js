@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation"; // Correct import
-import Link from 'next/link';
-import { Facebook, Instagram } from '@mui/icons-material';
+import Link from "next/link";
+import { Facebook, Instagram } from "@mui/icons-material";
 import styles from "../styles/footer.module.css"; // Import the CSS module
 import { Typography, Box } from "@mui/material";
 
@@ -17,14 +17,13 @@ const Footer = ({ isDarkMode }) => {
   const currentDate = new Date().getFullYear(); // Get the current year dynamically
 
   return (
-
-   
     <Box
       component="footer"
       sx={{
-        backgroundColor: isDarkMode ? "#1e1e1e" : "#f5f5f5", // Dynamic background
+        backgroundColor: isDarkMode ? "black" : "white", // Dynamic background
         color: isDarkMode ? "#ffffff" : "#000000", // Dynamic text color
-        padding: "20px",
+        paddingTop: "60px",
+        paddingBottom: "20px",
         textAlign: "center",
       }}
     >
@@ -41,7 +40,7 @@ const Footer = ({ isDarkMode }) => {
 
       {/* Menu Links */}
       <div className={styles.menuLinks}>
-        <ul >
+        <ul>
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
@@ -91,8 +90,6 @@ const Footer = ({ isDarkMode }) => {
         © {currentDate} FNDS Labs. All rights reserved.
       </Typography>
     </Box>
-
-
   );
 };
 

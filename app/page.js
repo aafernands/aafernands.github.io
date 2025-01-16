@@ -9,7 +9,7 @@ import ServicesSection from "../components/ServicesSection.js";
 import FrequentQuestionsSection from "../components/FrequentQuestionsSection.js";
 import { Container } from "@mui/material";
 
-export default function Home() {
+export default function Home(isDarkMode) {
   if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
     return <UnderConstruction />;
   }
@@ -22,8 +22,7 @@ export default function Home() {
 
     <Container
       sx={{
-        bgcolor: "",
-        px: "10px",
+			// backgroundColor: "red",
       }}
     >
       <HeroSection />

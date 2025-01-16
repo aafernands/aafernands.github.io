@@ -25,7 +25,7 @@ const ubuntu = Ubuntu({
 });
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(true); // State for dark mode toggle
+  const [isDarkMode, setIsDarkMode] = useState(false); // State for dark mode toggle
 
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode); // Toggle between dark and light mode
@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
           <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
           <Container
             sx={{
-              px: "0px",
+              backgroundColor: isDarkMode ? "#171717" : "#F7F7F7",
             }}
           >
             {children}

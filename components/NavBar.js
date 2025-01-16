@@ -32,7 +32,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
 		<AppBar position="fixed" className={styles.appbar}>
 			<Toolbar
 				sx={{
-					backgroundColor: isDarkMode ? "#1e1e1e" : "#f5f5f5", // Dynamic background
+					backgroundColor: isDarkMode ? "black" : "white", // Dynamic background
 					color: isDarkMode ? "#ffffff" : "#000000", // Dynamic text color
 					padding: "20px",
 					textAlign: "center",
