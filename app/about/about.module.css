@@ -4,8 +4,8 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Arial', sans-serif;
-  background-color: var(--background); /* Background color based on theme */
-  color: var(--foreground); /* Text color based on theme */
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333333; /* Dark gray text */
 }
 
 .aboutSection {
@@ -18,28 +18,29 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: var(--foreground); /* Title color based on theme */
+  color: #333333; /* Dark gray for title */
 }
 
 .paragraph {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: var(--foreground); /* Paragraph color based on theme */
+  color: #666666; /* Medium gray for paragraph text */
 }
 
 /* Contact Button Styles */
 .contactButton {
   display: inline-block;
   padding: 15px 30px;
-  background-color: var(--button-bg);  /* Yellow button background */
-  color: var(--foreground);  /* Text color based on theme */
+  background-color: #1976d2; /* Blue button background */
+  color: #ffffff; /* White button text */
   font-size: 1.1rem;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 30px;
+  transition: background-color 0.3s ease;
 }
 
 .contactButton:hover {
-  background-color: var(--button-hover-bg);  /* Hover effect for button */
+  background-color: #115293; /* Darker blue on hover */
 }

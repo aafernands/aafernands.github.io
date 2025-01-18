@@ -1,15 +1,5 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
-import {
-  Container,
-  Typography,
-  Button,
-  Box,
-  Grid,
-  IconButton,
-} from "@mui/material";
-import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import React from "react";
+import { Container, Typography, Button, Box, Card, CardMedia, CardContent, Grid } from "@mui/material";
 import styles from "../styles/portfolioSection.module.css"; // Import the CSS module
 
 const projects = [
@@ -34,71 +24,63 @@ const projects = [
 ];
 
 const PortfolioSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Automatically slide every 5 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % projects.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
-  };
-
-  const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % projects.length);
-  };
-
   return (
     <Container id="portfolio" className={styles.portfolioSection}>
-     
       <Typography variant="h2" className={styles.title}>
         Portfolio
       </Typography>
-      <Typography variant="body1" className={styles.description}>
+      <Typography variant="body1" className={styles.paragraph}>
         Explore some of our creative and innovative projects. Each project is
         designed with care and attention to detail.
       </Typography>
-      <Box className={styles.slideshowContainer}>
-        <IconButton onClick={handlePrev} className={styles.arrowButton}>
-          <ArrowBackIos />
-        </IconButton>
-        <Box className={styles.slide}>
-          <img
-            src={projects[currentSlide].image}
-            alt={projects[currentSlide].title}
-            className={styles.projectImage}
-          />
-          <Typography variant="h6" className={styles.projectTitle}>
-            {projects[currentSlide].title}
-          </Typography>
-          <Typography variant="body2" className={styles.projectDescription}>
-            {projects[currentSlide].description}
-          </Typography>
-        </Box>
-        <IconButton onClick={handleNext} className={styles.arrowButton}>
-          <ArrowForwardIos />
-        </IconButton>
-      </Box>
-      <Box className={styles.dots}>
-        {projects.map((_, index) => (
-          <Box
-            key={index}
-            className={`${styles.dot} ${
-              index === currentSlide ? styles.activeDot : ""
-            }`}
-            onClick={() => setCurrentSlide(index)}
-          />
+
+      {/* Grid for Responsive Layout */}
+      <Grid container spacing={3}>
+        {projects.map((project, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <Card
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                boxShadow: 3,
+                borderRadius: 2,
+                transition: "transform 0.3s",
+                '&:hover': {
+                  transform: "scale(1.05)",
+                },
+              }}
+              variant="outlined"
+            >
+              <CardMedia
+                component="img"
+                height="200"
+                image={project.image}
+                alt={project.title}
+                sx={{ objectFit: "cover", borderRadius: 1 }}
+              />
+              <CardContent sx={{ textAlign: "center" }}>
+                <Typography variant="h6">{project.title}</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {project.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </Box>
+      </Grid>
+
       <Button
         target="blank"
         href="https://figma.com"
         variant="contained"
         className={styles.seeMoreButton}
+        sx={{
+          background: "linear-gradient(to right, #ff3131, #006c61)",
+          color: "#fff",
+          textTransform: "none",
+          marginTop: "2rem",
+        }}
       >
         See More Projects
       </Button>

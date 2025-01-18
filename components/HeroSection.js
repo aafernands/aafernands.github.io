@@ -9,18 +9,15 @@ import {
 	Box,
 } from "@mui/material";
 import Link from "next/link";
-import { useTheme } from "@mui/material/styles"; 
+import { useTheme } from "@mui/material/styles";
 
 import styles from "../styles/HeroSection.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
-
-
 const HeroSection = () => {
-  const theme = useTheme(); // Access the theme
-
+	const theme = useTheme(); // Access the theme
 
 	return (
 		<div className={styles.mainContainer}>
@@ -88,8 +85,8 @@ const HeroSection = () => {
 						<FontAwesomeIcon
 							icon={faCircleCheck}
 							sx={{
-                color: theme.palette.primary.main, 
-              }}
+								color: theme.palette.primary.main,
+							}}
 						/>
 						<Typography
 							sx={{

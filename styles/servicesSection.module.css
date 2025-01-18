@@ -1,98 +1,97 @@
-/* Reviews Page Styles */
+/* Services Page Styles */
 .servicesSection {
 	padding: 3rem 1rem;
 	text-align: center;
-	color: red;
+	color: var(--foreground); /* Text color based on theme */
 	min-height: 100vh; /* Ensure the section covers the full viewport height */
-	background-color: #171717;
-	height: 100vh;
+	background-color: var(--background); /* Dark background based on theme */
 	display: flex;
 	justify-content: flex-start; /* Align content to the top */
-	position: relative;
 	flex-direction: column;
 	position: relative;
-}
-
-.title {
+  }
+  
+  .title {
 	font-size: 2.5rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	text-align: left;
 	padding: 20px;
 	font-family: "Roboto", sans-serif;
-	font-weight: 100;
-}
-
-.description {
+	color: var(--foreground); /* Title color based on theme */
+  }
+  
+  .description {
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
-	color: #ccc;
+	color: var(--foreground-secondary); /* Light gray for description */
 	text-align: left;
-}
-
-.page {
+  }
+  
+  .page {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 40px;
-	background-color: var(--background); /* Background color based on theme */
-}
-
-.main {
+	background-color: var(--background-light); /* Light background based on theme */
+  }
+  
+  .main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
-}
-
-.introText {
+  }
+  
+  .introText {
 	font-size: 1.2rem;
 	margin-bottom: 20px;
-	color: var(--foreground); /* Text color based on theme */
-}
-
-.reviewsList {
+	color: var(--foreground); /* Dark gray text based on theme */
+  }
+  
+  .reviewsList {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	max-width: 800px;
-}
-
-.reviewsItem {
-	background-color: var(--review-bg); /* Background color based on theme */
+  }
+  
+  .reviewsItem {
+	background-color: var(--review-bg); /* Light gray for review items based on theme */
 	padding: 20px;
 	border-radius: 8px;
 	margin-bottom: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for both modes */
-}
-
-.reviewsItem blockquote {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  .reviewsItem blockquote {
 	font-size: 1.1rem;
 	font-style: italic;
-	color: var(--foreground); /* Text color based on theme */
+	color: var(--foreground); /* Dark gray for quotes based on theme */
 	margin-bottom: 10px;
-}
-
-.reviewsItem p {
+  }
+  
+  .reviewsItem p {
 	font-weight: bold;
-	color: var(--foreground); /* Text color based on theme */
-}
-
-.reviewLink {
+	color: var(--foreground); /* Dark gray for bold text based on theme */
+  }
+  
+  .reviewLink {
 	display: inline-block;
 	margin-top: 10px;
-	color: var(--button-primary-hover); /* Link color based on theme */
+	color: var(--button-primary-hover); /* Blue for links based on theme */
 	text-decoration: none;
-}
-
-.reviewLink:hover {
+  }
+  
+  .reviewLink:hover {
 	text-decoration: underline;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @media (max-width: 600px) {
 	.reviewsItem {
-		padding: 0 16px;
+	  padding: 0 16px;
 	}
-}
+  }
+  

@@ -5,8 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  color: var(--foreground); /* Text color based on theme */
-  background-color: var(--background); /* Background color based on theme */
+  color: #000000; /* Black text */
 }
 
 .main {
@@ -15,23 +14,24 @@
   align-items: center;
   width: 100%;
   max-width: 600px;
-  background: var(--form-background); /* Form background based on theme */
+  background: #f5f5f5; /* Light gray form background */
   padding: 20px;
+  border: 1px solid #cccccc; /* Light gray border */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .title {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: var(--foreground); /* Title color based on theme */
+  color: #333333; /* Dark gray for the title */
 }
 
 .description {
   font-size: 1rem;
   margin-bottom: 20px;
   text-align: center;
-  color: var(--foreground); /* Description color based on theme */
+  color: #666666; /* Medium gray for descriptions */
 }
 
 .form {
@@ -44,25 +44,25 @@
 .label {
   font-size: 1rem;
   font-weight: bold;
-  color: var(--foreground); /* Label color based on theme */
+  color: #333333; /* Dark gray for labels */
 }
 
 .input,
 .textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--input-border); /* Border color based on theme */
+  border: 1px solid #cccccc; /* Light gray border */
   border-radius: 4px;
   font-size: 1rem;
-  background-color: var(--input-background); /* Input background based on theme */
-  color: var(--foreground); /* Text color inside inputs */
+  background-color: #ffffff; /* White input background */
+  color: #333333; /* Dark gray text */
 }
 
 .input:focus,
 .textarea:focus {
   outline: none;
-  border-color: var(--input-focus-border); /* Focused input border color */
-  box-shadow: 0 0 4px var(--input-focus-shadow); /* Focused input shadow */
+  border-color: #1976d2; /* Blue border on focus */
+  box-shadow: 0 0 4px rgba(25, 118, 210, 0.4); /* Blue shadow on focus */
 }
 
 .textarea {
@@ -74,8 +74,8 @@
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: var(--button-text); /* Button text color based on theme */
-  background-color: var(--button-bg); /* Yellow button background */
+  color: #ffffff; /* White button text */
+  background-color: #1976d2; /* Blue button background */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -83,17 +83,17 @@
 }
 
 .button:hover {
-  background-color: var(--button-hover-bg); /* Button hover color */
+  background-color: #115293; /* Darker blue on hover */
 }
 
 .button:disabled {
-  background-color: #cccccc;
+  background-color: #cccccc; /* Light gray for disabled button */
   cursor: not-allowed;
 }
 
 .successMessage {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--success-message); /* Success message color based on theme */
+  color: #388e3c; /* Green for success messages */
   text-align: center;
 }

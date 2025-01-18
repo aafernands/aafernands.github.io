@@ -1,16 +1,16 @@
 /* Reviews Page Styles */
 .servicesSection {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 	padding: 3rem 1rem;
 	text-align: center;
 	color: red;
 	min-height: 100vh; /* Ensure the section covers the full viewport height */
 	background-color: #171717;
-	height: 100vh;
 	display: flex;
 	justify-content: flex-start; /* Align content to the top */
-	position: relative;
 	flex-direction: column;
-	position: relative;
 }
 
 .title {
