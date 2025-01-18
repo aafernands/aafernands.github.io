@@ -205,48 +205,45 @@ const Pricing = () => {
 				{plans.map((plan, index) => (
 					<Grid item xs={12} sm={6} md={4} key={index}>
 						<Card>
-								<Box className={styles.cardHeader}>
-									<Typography variant="h5" align="center" gutterBottom>
-										{plan.name}
-									</Typography>
+							<Box className={styles.cardHeader}>
+								<Typography variant="h5" align="center" gutterBottom>
+									{plan.name}
+								</Typography>
+								<Typography
+									variant="subtitle1"
+									align="center"
+									color="textSecondary"
+								>
+									{plan.pages}
+								</Typography>
+
+								<Box className={styles.priceContainer}>
 									<Typography
+										className={styles.oldPrice}
 										variant="subtitle1"
 										align="center"
 										color="textSecondary"
 									>
-										{plan.pages}
+										{plan.oldPrice}
 									</Typography>
 
-									<Box className={styles.priceContainer}>
-										<Typography
-											className={styles.oldPrice}
-											variant="subtitle1"
-											align="center"
-											color="textSecondary"
+									<Typography
+										className={styles.price}
+										variant="h4"
+										align="center"
+									>
+										{plan.price}
+										<span
+											style={{
+												position: "relative",
+												top: "-15px",
+												fontSize: "1.0rem",
+											}}
 										>
-											{plan.oldPrice}
-										</Typography>
-
-										<Typography
-											className={styles.price}
-											variant="h4"
-											align="center"
-										>
-											{plan.price}
-											<span
-												style={{
-													position: "relative",
-													top: "-15px",
-													fontSize: "1.0rem",
-												}}
-											>
-												{plan.month}
-											</span>
-										</Typography>
-									</Box>
+											{plan.month}
+										</span>
+									</Typography>
 								</Box>
-                <CardContent className={styles.cardContent}>
-
 								<Typography
 									variant="body2"
 									align="center"
@@ -255,6 +252,8 @@ const Pricing = () => {
 								>
 									{plan.setupFee}
 								</Typography>
+							</Box>
+							<CardContent className={styles.cardContent}>
 								<Typography variant="body2" align="center" gutterBottom>
 									{plan.targetAudience}
 								</Typography>

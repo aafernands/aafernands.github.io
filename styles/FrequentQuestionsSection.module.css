@@ -7,19 +7,19 @@
 }
 
 .title {
+	text-align: left;
 	font-size: 2.5rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
-	text-align: left;
-	padding: 20px;
-	font-weight: 100;
-	color: var(--foreground)
+	
+	color: #333333;
 }
 
 .description {
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
 	color: #ccc;
+	text-align: left;
 }
 
 .slideshowContainer {
@@ -34,7 +34,10 @@
 
 @media (min-width: 600px) {
 	.slideshowContainer {
-		grid-template-columns: repeat(2, 1fr); /* Show 2 images for medium screens */
+		grid-template-columns: repeat(
+			2,
+			1fr
+		); /* Show 2 images for medium screens */
 	}
 }
 

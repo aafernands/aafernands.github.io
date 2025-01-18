@@ -1,7 +1,6 @@
 .pricingContainer {
 	padding: 2rem;
 	text-align: left;
-
 }
 
 .priceContainer {
@@ -9,7 +8,6 @@
 	justify-content: center;
 	align-items: baseline;
 	margin: 1rem 0;
-	
 }
 
 .price {
@@ -37,10 +35,9 @@
 	text-decoration: line-through;
 	color: rgb(255, 115, 0);
 	position: relative;
-	top: -10px; 
-	font-size: 1.0rem;
-  }
-  
+	top: -10px;
+	font-size: 1rem;
+}
 
 .button {
 	font-weight: bold;
@@ -52,9 +49,10 @@
 	height: 1.5em;
 }
 
-.cardContent{
+.cardContent {
 	margin: 0px;
 	padding: 20px;
+	border: solid 1px #c7c7c7;
 }
 
 .schedulleLink {
@@ -65,14 +63,15 @@
 	text-align: center;
 	padding: 20px;
 	align-items: center;
-  }
-  
-  /* Optional: To ensure it doesn't get underlined on hover */
-  .schedulleLink:hover {
+}
+
+/* Optional: To ensure it doesn't get underlined on hover */
+.schedulleLink:hover {
 	text-decoration: none;
-  }
-  
-  .cardHeader {
-	background-color: rgb(255, 255, 255);
+}
+
+.cardHeader {
+	background-color: #c7c7c7;
 	padding: 20px;
-  }
+}
+

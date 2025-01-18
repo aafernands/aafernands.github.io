@@ -45,11 +45,11 @@ const HeroSection = () => {
 				</Box>
 				<Box className={styles.imageContainer}>
 					<Link href="/">
-						<img
+						{/* <img
 							src="./largeHero.png" // Ensure the image path is correct
 							alt="Hero Image"
 							className={styles.heroImage}
-						/>
+						/> */}
 					</Link>
 				</Box>
 			</Container>
