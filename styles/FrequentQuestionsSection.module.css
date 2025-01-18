@@ -1,11 +1,9 @@
-.portfolioSection {
+.questionsSection {
 	padding: 3rem 1rem;
 	text-align: left;
-	color: #fff;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	/* background-color: blue; */
 }
 
 .title {

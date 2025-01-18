@@ -82,10 +82,10 @@ const HeroSection = () => {
 
 				<Grid item xs={12} lg={4}>
 					<Box display="flex" alignItems="flex-start">
-						<FontAwesomeIcon
+					<FontAwesomeIcon
 							icon={faCircleCheck}
-							sx={{
-								color: theme.palette.primary.main,
+							style={{
+								color: "#90CAF9",
 							}}
 						/>
 						<Typography
@@ -135,14 +135,13 @@ const HeroSection = () => {
 				<Box className={styles.rightButtons}>
 					{/* First Button: Book a Call */}
 					<Button
-						target="_blank"
+						target="blank"
 						href="https://calendly.com/fndslabs-15min-call/15min"
 						variant="outlined"
 						aria-label="Book a Call"
 						sx={{
 							margin: "0 10px",
-							color: "var(--button-textOutlined, #000)",
-							borderColor: "var(--button-border, #000)",
+							color: "white, #000)",
 						}}
 					>
 						Book a Call
@@ -150,7 +149,7 @@ const HeroSection = () => {
 
 					{/* Second Button: Get Started */}
 					<Button
-						href="/get-started"
+						href="/pricing"
 						variant="contained"
 						aria-label="Get Started"
 						sx={{

@@ -1,7 +1,8 @@
 /* Pricing Container */
 .pricingContainer {
-	padding: 20px;
+	padding: 0px;
 	text-align: center;
+	margin: 0px;
 }
 
 .priceContainer {
