@@ -17,7 +17,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./pricing.module.css"; // Ensure the correct path to your CSS file
 
-const Pricing = (isDarkMode) => {
+const Pricing = () => {
   const basicFeatures = [
     "Basic Custom Design",
     "High-Speed Hosting",

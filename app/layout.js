@@ -1,60 +1,29 @@
 "use client";
 
-import { useState } from "react";
-import "./globals.css"; // Import global CSS
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Ubuntu, Montserrat } from "next/font/google";
-import {
-  Container,
-  ThemeProvider,
-  CssBaseline,
-  createTheme,
-} from "@mui/material";
-import Navbar from "../components/NavBar";
-import Footer from "../components/Footer";
+// layout.js
+import { ThemeProvider, CssBaseline, Container } from "@mui/material";
+import { lightTheme } from "../themes"; // Import the light theme
+import { Ubuntu, Montserrat } from "next/font/google"; // Import fonts
+import Navbar from "../components/NavBar"; // Your Navbar component
+import Footer from "../components/Footer"; // Your Footer component
 
+// Import fonts
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-    document.documentElement.setAttribute(
-      "data-theme",
-      !isDarkMode ? "dark" : "light"
-    );
-  };
-
-  const theme = createTheme({
-    palette: {
-      mode: isDarkMode ? "dark" : "light",
-      primary: {
-        main: isDarkMode ? "#90caf9" : "#1976d2",
-      },
-      background: {
-        default: isDarkMode ? "#121212" : "#ffffff",
-        paper: isDarkMode ? "#1e1e1e" : "#f5f5f5",
-      },
-    },
-    typography: {
-      fontFamily: "'Montserrat', 'Ubuntu', sans-serif",
-    },
-  });
-
   return (
-    <html lang="en" data-theme={isDarkMode ? "dark" : "light"}>
+    <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${montserrat.className} ${ubuntu.className}`}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-          <Container sx={{py: "86px", bgcolor: "red"}} >{children}</Container>
-          <Footer />
+        <ThemeProvider theme={lightTheme}> {/* Apply theme here */}
+          <CssBaseline /> {/* Normalize styles */}
+          <Navbar /> {/* Your Navbar */}
+          <Container sx={{ bgcolor:"blue", py: "86px" }}>{children}</Container> {/* Main content */}
+          <Footer /> {/* Your Footer */}
         </ThemeProvider>
       </body>
     </html>

@@ -1,168 +1,176 @@
 import React from "react";
 import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Container,
-  Grid,
-  Box,
+	AppBar,
+	Toolbar,
+	Typography,
+	Button,
+	Container,
+	Grid,
+	Box,
 } from "@mui/material";
 import Link from "next/link";
+import { useTheme } from "@mui/material/styles"; 
+
 import styles from "../styles/HeroSection.module.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
+
+
 const HeroSection = () => {
-  return (
-    <div className={styles.mainContainer}>
-      <Container className={styles.heroSection}>
-        <Box className={styles.textContainer}>
-          <Typography
-            variant="h1"
-            sx={{
-              padding: "0rem",
-              margin: "0rem",
-              fontWeight: 700,
-              fontSize: {
-                xs: "2.5rem", // Extra small screens
-                sm: "3rem", // Small screens
-                md: "3.5rem", // Medium screens
-                lg: "4rem", // Large screens
-                xl: "5rem", // Extra large screens
-              },
-            }}
-          >
-            Building your online presence with{" "}
-            <span className={styles.highlight}>creative and innovative</span>{" "}
-            solutions!
-          </Typography>
-        </Box>
-        <Box className={styles.imageContainer}>
-          <Link href="/">
-            <img
-              src="./largeHero.png" // Ensure the image path is correct
-              alt="Hero Image"
-              className={styles.heroImage}
-            />
-          </Link>
-        </Box>
-      </Container>
+  const theme = useTheme(); // Access the theme
 
-      <Grid container className={styles.features} spacing={2}>
-        <Grid item xs={12} lg={4}>
-          <Box display="flex" alignItems="flex-start">
-            <FontAwesomeIcon
-              icon={faCircleCheck}
-              style={{
-                color: "#90CAF9",
-              }}
-            />
-            <Typography
-              sx={{
-                fontSize: {
-                  xs: "1.1rem",
-                  sm: "1.5rem",
-                  md: "1.8rem",
-                },
-                margin: "-10px 0px 0px 10px",
-              }}
-              className={styles.heroDescription}
-            >
-              <strong>Custom Designs:</strong> Your website should be as unique
-              as your brand.
-            </Typography>
-          </Box>
-        </Grid>
 
-        <Grid item xs={12} lg={4}>
-          <Box display="flex" alignItems="flex-start">
-            <FontAwesomeIcon
-              icon={faCircleCheck}
-              style={{
-                color: "#90CAF9",
-              }}
-            />
-            <Typography
-              sx={{
-                fontSize: {
-                  xs: "1.1rem",
-                  sm: "1.5rem",
-                  md: "1.8rem",
-                },
-                margin: "-10px 0px 0px 10px",
-              }}
-              className={styles.heroDescription}
-            >
-              <strong>Speedy Delivery:</strong> Deadlines matter. We ensure your
-              project is delivered on time.
-            </Typography>
-          </Box>
-        </Grid>
+	return (
+		<div className={styles.mainContainer}>
+			<Container className={styles.heroSection}>
+				<Box className={styles.textContainer}>
+					<Typography
+						variant="h1"
+						sx={{
+							padding: "0rem",
+							margin: "0rem",
+							fontWeight: 700,
+							fontSize: {
+								xs: "2.5rem", // Extra small screens
+								sm: "3rem", // Small screens
+								md: "3.5rem", // Medium screens
+								lg: "4rem", // Large screens
+								xl: "5rem", // Extra large screens
+							},
+						}}
+					>
+						Building your online presence with{" "}
+						<span className={styles.highlight}>creative and innovative</span>{" "}
+						solutions!
+					</Typography>
+				</Box>
+				<Box className={styles.imageContainer}>
+					<Link href="/">
+						<img
+							src="./largeHero.png" // Ensure the image path is correct
+							alt="Hero Image"
+							className={styles.heroImage}
+						/>
+					</Link>
+				</Box>
+			</Container>
 
-        <Grid item xs={12} lg={4}>
-          <Box display="flex" alignItems="flex-start">
-            <FontAwesomeIcon
-              icon={faCircleCheck}
-              style={{
-                color: "#90CAF9",
-              }}
-            />
-            <Typography
-              sx={{
-                fontSize: {
-                  xs: "1.1rem",
-                  sm: "1.5rem",
-                  md: "1.8rem",
-                },
-                margin: "-10px 0px 0px 10px",
-              }}
-              className={styles.heroDescription}
-            >
-              <strong>Full Transparency:</strong> Stay informed every step of
-              the way.
-            </Typography>
-          </Box>
-        </Grid>
-      </Grid>
+			<Grid container className={styles.features} spacing={2}>
+				<Grid item xs={12} lg={4}>
+					<Box display="flex" alignItems="flex-start">
+						<FontAwesomeIcon
+							icon={faCircleCheck}
+							style={{
+								color: "#90CAF9",
+							}}
+						/>
+						<Typography
+							sx={{
+								fontSize: {
+									xs: "1.1rem",
+									sm: "1.5rem",
+									md: "1.8rem",
+								},
+								margin: "-10px 0px 0px 10px",
+							}}
+							className={styles.heroDescription}
+						>
+							<strong>Custom Designs:</strong> Your website should be as unique
+							as your brand.
+						</Typography>
+					</Box>
+				</Grid>
 
-      <Container className={styles.heroSection}>
-        <Box className={styles.rightButtons}>
-          {/* First Button: Book a Call */}
-          <Button
-            target="_blank"
-            href="https://calendly.com/fndslabs-15min-call/15min"
-            variant="outlined"
-            aria-label="Book a Call"
-            sx={{
-              margin: "0 10px",
-              color: "var(--button-textOutlined, #000)",
-              borderColor: "var(--button-border, #000)",
-            }}
-          >
-            Book a Call
-          </Button>
+				<Grid item xs={12} lg={4}>
+					<Box display="flex" alignItems="flex-start">
+						<FontAwesomeIcon
+							icon={faCircleCheck}
+							sx={{
+                color: theme.palette.primary.main, 
+              }}
+						/>
+						<Typography
+							sx={{
+								fontSize: {
+									xs: "1.1rem",
+									sm: "1.5rem",
+									md: "1.8rem",
+								},
+								margin: "-10px 0px 0px 10px",
+							}}
+							className={styles.heroDescription}
+						>
+							<strong>Speedy Delivery:</strong> Deadlines matter. We ensure your
+							project is delivered on time.
+						</Typography>
+					</Box>
+				</Grid>
 
-          {/* Second Button: Get Started */}
-          <Button
-            href="/get-started"
-            variant="contained"
-            aria-label="Get Started"
-            sx={{
-              margin: "0 10px",
-              backgroundColor: "var(--button-bg, #1976d2)",
-              color: "var(--button-text, #fff)",
-              "&:hover": {
-                backgroundColor: "var(--button-bg-hover, #1565c0)",
-              },
-            }}
-          >
-            Get Started
-          </Button>
-        </Box>
-      </Container>
-    </div>
-  );
+				<Grid item xs={12} lg={4}>
+					<Box display="flex" alignItems="flex-start">
+						<FontAwesomeIcon
+							icon={faCircleCheck}
+							style={{
+								color: "#90CAF9",
+							}}
+						/>
+						<Typography
+							sx={{
+								fontSize: {
+									xs: "1.1rem",
+									sm: "1.5rem",
+									md: "1.8rem",
+								},
+								margin: "-10px 0px 0px 10px",
+							}}
+							className={styles.heroDescription}
+						>
+							<strong>Full Transparency:</strong> Stay informed every step of
+							the way.
+						</Typography>
+					</Box>
+				</Grid>
+			</Grid>
+
+			<Container className={styles.heroSection}>
+				<Box className={styles.rightButtons}>
+					{/* First Button: Book a Call */}
+					<Button
+						target="_blank"
+						href="https://calendly.com/fndslabs-15min-call/15min"
+						variant="outlined"
+						aria-label="Book a Call"
+						sx={{
+							margin: "0 10px",
+							color: "var(--button-textOutlined, #000)",
+							borderColor: "var(--button-border, #000)",
+						}}
+					>
+						Book a Call
+					</Button>
+
+					{/* Second Button: Get Started */}
+					<Button
+						href="/get-started"
+						variant="contained"
+						aria-label="Get Started"
+						sx={{
+							margin: "0 10px",
+							backgroundColor: "var(--button-bg, #1976d2)",
+							color: "var(--button-text, #fff)",
+							"&:hover": {
+								backgroundColor: "var(--button-bg-hover, #1565c0)",
+							},
+						}}
+					>
+						Get Started
+					</Button>
+				</Box>
+			</Container>
+		</div>
+	);
 };
 
 export default HeroSection;

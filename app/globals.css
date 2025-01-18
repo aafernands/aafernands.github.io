@@ -8,37 +8,5 @@
 
 body {
   font-family: 'Ubuntu', 'Roboto', sans-serif;
-  background-color: var(--background);
-  color: var(--foreground);
-}
-
-/* Light Theme Variables */
-:root {
-  --background: white;
-  --foreground: black;
-  --form-background: #ffffff;
-  --input-background: #ffffff;
-  --input-border: #555555;
-  --button-border: #005bb5;
-  --button-bg: #1976d2; --button-hover-bg: #0056b3;
-  --button-text: #ffffff;
-  --button-textOutlined: #005bb5;
-  --button-textContained: #ffffff;
-  --review-bg: rgba(0, 0, 0, 0.05);
-}
-
-/* Dark Theme Variables */
-[data-theme="dark"] {
-  --background: black;
-  --foreground: white;
-  --form-background: #333333;
-  --input-background: #444444;
-  --input-border: #ffffff;
-  --button-bg: #90caf9;
-  --button-hover-bg: #005bb5;
-  --button-text: black;
-  --button-textOutlined: #ffffff;
-  --button-textContained: #ffffff;
-  --button-border: #ffffff;
-  --review-bg: rgba(255, 255, 255, 0.1);
+  color: black;
 }

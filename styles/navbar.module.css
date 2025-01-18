@@ -1,7 +1,7 @@
 .navbar {
-	z-index: 1000; /* Ensure it stays above other elements */
-	background-color: transparent; /* Transparent background for AppBar */
-	color: white;
+	z-index: 1000;
+	background-color: transparent;
+	color: black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -9,7 +9,7 @@
   }
   
   .appbar {
-	background: black;
+	background: white; /* Fixed background color */
 	box-shadow: none;
   }
   
@@ -34,7 +34,7 @@
   }
   
   .navLinks a {
-	color: white;
+	color: black; /* Fixed text color */
 	text-decoration: none;
 	font-size: 16px;
   }
@@ -57,7 +57,7 @@
   
   .menuIcon {
 	display: none;
-	color: rgb(255, 255, 255);
+	color: black; /* Fixed icon color */
   }
   
   .drawerMenu {
@@ -93,13 +93,13 @@
   }
   
   .logoImage {
-	height: auto; /* Maintain aspect ratio */
-	max-height: 30px; /* Adjust based on your navbar height */
-	width: auto; /* Ensure the width adjusts proportionally */
-	max-width: 200px; /* Prevent the logo from being too wide */
-	padding: 0; /* Avoid unnecessary padding */
-	margin: 0 auto; /* Center the logo if necessary */
-	display: block; /* Ensure proper alignment */
-	object-fit: contain; /* Keep the logo within bounds */
+	height: auto;
+	max-height: 30px;
+	width: auto;
+	max-width: 200px;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+	object-fit: contain;
   }
   

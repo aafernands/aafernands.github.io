@@ -5,11 +5,9 @@
 	position: relative;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-color: var(--background, #fff);
-
+	background-color: rgb(236, 236, 236)
   }
-
-
+  
   .heroSection {
 	display: flex;
 	justify-content: space-between;
@@ -17,15 +15,11 @@
 	height: 40%;
 	padding: 1rem 0rem 0rem 2rem;
   }
-    
-
-  /* Style for strong tags within heroDescription */
+  
   .heroDescription strong {
-	color: var(--foreground);/* Set the text color to orange */
-	font-weight: bold; /* Make the text bold */
-
+	color: var(--foreground);
+	font-weight: bold;
   }
-
   
   .logo {
 	font-size: 1.2rem;
@@ -36,7 +30,6 @@
   .rightButtons {
 	display: flex;
 	gap: 1rem;
-	
   }
   
   .bookButton {
@@ -52,7 +45,6 @@
 	text-transform: none;
   }
   
-  
   .highlight {
 	background: linear-gradient(to right, #ff3131, #fbbd02);
 	-webkit-background-clip: text;
@@ -62,7 +54,7 @@
   .features {
 	padding: 40px;
   }
-
+  
   .featureList {
 	margin-top: 1rem;
   }
@@ -77,16 +69,38 @@
 	align-items: center;
   }
   
- .heroImage {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-/* Hide the image on small screens */
-@media (max-width: 768px) {
   .heroImage {
-    display: none;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
   }
-}
+  
+  /* Hide the image on small screens */
+  @media (max-width: 768px) {
+	.heroImage {
+	  display: none;
+	}
+  }
+  
+  /* Adjust the layout for small screens */
+  @media (max-width: 600px) {
+	.heroSection {
+	  flex-direction: column;
+	  height: auto;
+	}
+  
+	.heroImage {
+	  max-width: 100%;
+	  height: auto;
+	}
+  
+	.features {
+	  padding: 20px;
+	}
+  
+	.rightButtons {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
   

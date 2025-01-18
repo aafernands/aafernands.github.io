@@ -9,7 +9,7 @@ import ServicesSection from "../components/ServicesSection.js";
 import FrequentQuestionsSection from "../components/FrequentQuestionsSection.js";
 import { Container } from "@mui/material";
 
-export default function Home(isDarkMode) {
+export default function Home() {
   if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
     return <UnderConstruction />;
   }

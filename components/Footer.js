@@ -6,7 +6,7 @@ import { Facebook, Instagram } from "@mui/icons-material";
 import styles from "../styles/footer.module.css"; // Import the CSS module
 import { Typography, Box } from "@mui/material";
 
-const Footer = ({ isDarkMode }) => {
+const Footer = () => {
   const router = useRouter(); // Initialize the router
 
   // Handle navigation
@@ -19,8 +19,8 @@ const Footer = ({ isDarkMode }) => {
   return (
     <Box
       sx={{
-        backgroundColor: isDarkMode ? "black" : "white", // Dynamic background
-        color: isDarkMode ? "#ffffff" : "#000000", // Dynamic text color
+        backgroundColor: "white", // Set a fixed background color
+        color: "#000000", // Set fixed text color
         paddingTop: "60px",
         paddingBottom: "20px",
         textAlign: "center",
@@ -30,7 +30,7 @@ const Footer = ({ isDarkMode }) => {
       <div className={styles.logo}>
         <Link href="/">
           <img
-            src={isDarkMode ? "../logoBlack.png" : "../logoWhite.png"} // Dynamic logo
+            src="../logoWhite.png" // Use a fixed logo (white logo in this case)
             alt="FNDS Labs Logo"
             className={styles.logoImage}
           />
@@ -54,7 +54,7 @@ const Footer = ({ isDarkMode }) => {
                 aria-label={item.name}
                 style={{
                   cursor: "pointer",
-                  color: isDarkMode ? "#90caf9" : "#1976d2", // Dynamic link color
+                  color: "#1976d2", // Set fixed link color
                 }}
               >
                 {item.name}
@@ -70,7 +70,7 @@ const Footer = ({ isDarkMode }) => {
           href="https://www.facebook.com/fndslabs/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: isDarkMode ? "#90caf9" : "#1976d2" }} // Dynamic icon color
+          style={{ color: "#1976d2" }} // Set fixed icon color
         >
           <Facebook className={styles.icon} />
         </a>
@@ -78,7 +78,7 @@ const Footer = ({ isDarkMode }) => {
           href="https://www.instagram.com/fnds.labs"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: isDarkMode ? "#90caf9" : "#1976d2" }} // Dynamic icon color
+          style={{ color: "#1976d2" }} // Set fixed icon color
         >
           <Instagram className={styles.icon} />
         </a>
