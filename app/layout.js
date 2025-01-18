@@ -24,7 +24,8 @@ export default function RootLayout({ children }) {
 					{/* Apply theme here */}
 					<CssBaseline /> {/* Normalize styles */}
 					<Navbar /> {/* Your Navbar */}
-					<Container sx={{ bgcolor: "#f5f5f5", py: "86px" }}>
+					<Container sx={{ bgcolor: "white", py: "86px" }}>
+						{/* #f5f5f5 */}
 						{children}
 					</Container>{" "}
 					{/* Main content */}

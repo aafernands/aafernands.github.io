@@ -1,236 +1,78 @@
-/* Pricing Container */
 .pricingContainer {
-	padding: 0px;
-	text-align: center;
-	margin: 0px;
+	padding: 2rem;
+	text-align: left;
+
 }
 
 .priceContainer {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-  margin-left: 10px;  /* 10px gap on the left */
-}
-
-.title {
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-	color: white;
-	font-weight: 100 !important;
-	padding: 20;
-}
-
-.subtitle {
-	font-size: 1.2rem;
-	color: #555;
-	margin-bottom: 40px;
-}
-
-.plansContainer {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	flex-wrap: wrap;
-}
-
-/* Plan Card Styling */
-.planCard {
-	background: #e0e0e0;
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	padding: 20px;
-	width: 300px;
-	text-align: left;
-	position: relative;
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
-	margin-bottom: 20px;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
-	transform: translateY(0); /* Initial position */
-}
-
-.planCard:hover {
-	transform: translateY(-15px); /* Lift the card further on hover */
-	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Stronger shadow for deeper 3D effect */
-}
-
-/* Popular Plan Styling */
-.popularPlan {
-	border: 2px solid #007bff;
-	padding: 20px;
-}
-
-.premiumPlan {
-	border: 2px solid #28a745;
-	background: #f0fff4;
-	padding: 20px;
-}
-
-/* Badges for Popular and Premium Plans */
-.popularBadge,
-.premiumBadge {
-	position: absolute;
-	top: -10px;
-	left: 10px;
-	background: #007bff;
-	color: #fff;
-	padding: 5px 10px;
-	font-size: 0.9rem;
-	font-weight: bold;
-	border-radius: 4px;
-	padding: 10px;
-}
-
-.premiumBadge {
-	background: #28a745;
-}
-
-/* Plan Name Styling */
-.planName {
-	font-size: 1.8rem;
-	margin-bottom: 10px;
-	color: #333;
-	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-/* Other Text Styling */
-.pages {
-	font-size: 1.1rem;
-	margin-bottom: 10px;
-	color: #777;
+	align-items: baseline;
+	margin: 1rem 0;
+	
 }
 
 .price {
 	font-size: 3.5rem;
-	color: #000000;
+	color: black;
 	font-weight: bold;
-	margin-bottom: 10px;
-  margin-left: 10px;
+}
+
+.title {
+	margin-bottom: 2rem;
+	font-weight: bold;
+}
+
+.card {
+	border-radius: 12px;
+	transition: transform 0.3s ease;
+	border: #007bff;
+}
+
+.card:hover {
+	transform: scale(1.05);
 }
 
 .oldPrice {
-	font-size: 1rem;
-	color: #f75b00;
 	text-decoration: line-through;
+	color: rgb(255, 115, 0);
+	position: relative;
+	top: -10px; 
+	font-size: 1.0rem;
+  }
+  
+
+.button {
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-.setupFee {
-	font-size: 1rem;
-	color: #888;
-	margin-bottom: 20px;
-}
-
-/* Features List */
-.featuresList {
-	list-style: none;
-	padding: 10px !important;
-	margin-bottom: 20px;
-}
-
-.feature {
-	font-size: 1rem;
-	color: #333;
-	margin-bottom: 8px;
-}
-
-/* Icon Styling */
 .icon {
-	color: #000000;
-	margin-right: 10px;
-	font-size: 1rem; /* Adjust the size here */
+	color: #171717;
+	height: 1.5em;
 }
 
-/* Call-to-Action Button */
-.ctaButton {
-	background: #007bff;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 4px;
+.cardContent{
+	margin: 0px;
+	padding: 20px;
+}
+
+.schedulleLink {
 	cursor: pointer;
-	transition:
-		background-color 0.3s ease,
-		transform 0.3s ease;
-}
-
-.ctaButton:hover {
-	background: #0056b3;
-	transform: translateY(-2px); /* Slight lift on hover */
-}
-
-.premiumPlan .ctaButton {
-	background: #28a745;
-}
-
-.premiumPlan .ctaButton:hover {
-	background: #1e7e34;
-	transform: translateY(-2px); /* Slight lift on hover */
-}
-
-/* Features List */
-.featuresList {
-	list-style: none;
-	padding: 0;
-	margin-bottom: 20px;
-	padding-bottom: 20px; /* Add padding below the list */
-}
-
-/* Feature Item Styling */
-.feature {
-	font-size: 1rem;
-	border-bottom: 1px solid #c6c6c6; /* Light gray line between features */
-	margin-bottom: 8px;
-	padding: 8px 0; /* Add padding between feature items */
-}
-
-.month {
-	font-size: 1rem;
-	margin-bottom: 20px;
-	color: #000000;
-}
-
-
-.planCardCta {
-  display: flex;
-  flex-direction: column; /* Stack the button and the link vertically */
-  align-items: center;    /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  text-align: center;      /* Optional: centers text inside each element */
-}
-
-.ctaButton {
-  margin-bottom: 10px; /* Optional: space between the button and the link */
-}
-
-.scheduleLink {
-  cursor: pointer;
-  color: #007bff; /* Optional: link color */
-  text-decoration: none; /* Optional: underline the link */
-  font-weight: bold;
-}
-
-.scheduleLink {
-	font-size: 1rem;
-	margin-bottom: 20px;
-	color: #000000;
-}
-
-.targetAudience {
-	font-size: 0.8rem;
-	margin-bottom: 20px;
-	color: #000000;
-}
-
-.featureDescription {
-	font-size: 0.8rem;
-	padding: 10px;
-	color: #7f7f7f;
-}
-
-.setupFee {
-justify-content:center;
-
-}
+	color: #007bff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+	align-items: center;
+  }
+  
+  /* Optional: To ensure it doesn't get underlined on hover */
+  .schedulleLink:hover {
+	text-decoration: none;
+  }
+  
+  .cardHeader {
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+  }
