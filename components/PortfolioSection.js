@@ -21,13 +21,13 @@ const projects = [
   {
     title: "Project 2",
     description: "A brief description of Project 2.",
-    image: "./bellavita.png",
+    image: "",
     // link: "/project2",
   },
   {
     title: "Project 3",
     description: "A brief description of Project 3.",
-    image: "./bellavita.jpg",
+    image: "",
     // link: "/project3",
   },
 ];
@@ -64,10 +64,10 @@ const PortfolioSection = () => {
               >
                 <CardMedia
                   component="img"
-                  height="200"
+                  height="150"
                   image={project.image}
                   alt={project.title}
-                  sx={{ objectFit: "contain", borderRadius: 1, padding: "10px" }}
+                  sx={{ objectFit: "contain", borderRadius: 1, padding: "0px" }}
                 />
                 <CardContent sx={{ textAlign: "center" }}>
                   <Typography variant="h6">{project.title}</Typography>
