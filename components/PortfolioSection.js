@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Project 3",
     description: "A brief description of Project 3.",
-    image: "./test.jpg",
+    image: "./bellavita.jpg",
     // link: "/project3",
   },
 ];
