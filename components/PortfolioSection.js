@@ -64,10 +64,10 @@ const PortfolioSection = () => {
               >
                 <CardMedia
                   component="img"
-                  height="150"
+                  height="200"
                   image={project.image}
                   alt={project.title}
-                  sx={{ objectFit: "contain", borderRadius: 1, padding: "0px" }}
+                  sx={{ objectFit: "contain", borderRadius: 1, padding: "10px" }}
                 />
                 <CardContent sx={{ textAlign: "center" }}>
                   <Typography variant="h6">{project.title}</Typography>
