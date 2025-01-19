@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Bella Vita Ristorante",
     description: "A responsive website for an authentic Italian restaurant, showcasing the menu, story, and reservation options with a modern, user-friendly design.",
-    image: "./bellavita.png", // Replace with actual image paths
+    image: "./project1.png", // Replace with actual image paths
     link: "/project1",
   },
   {
