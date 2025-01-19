@@ -13,9 +13,9 @@ import styles from "../styles/portfolioSection.module.css"; // Import the CSS mo
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1.",
-    image: "./project1.png", // Replace with actual image paths
+    title: "Bella Vita Ristorante",
+    description: "A responsive website for an authentic Italian restaurant, showcasing the menu, story, and reservation options with a modern, user-friendly design.",
+    image: "./bellavita.png", // Replace with actual image paths
     link: "/project1",
   },
   {
@@ -67,7 +67,7 @@ const PortfolioSection = () => {
                   height="200"
                   image={project.image}
                   alt={project.title}
-                  sx={{ objectFit: "cover", borderRadius: 1 }}
+                  sx={{ objectFit: "contain", borderRadius: 1, padding: "10px" }}
                 />
                 <CardContent sx={{ textAlign: "center" }}>
                   <Typography variant="h6">{project.title}</Typography>
