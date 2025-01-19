@@ -21,13 +21,13 @@ const projects = [
   {
     title: "Project 2",
     description: "A brief description of Project 2.",
-    image: "../bellavita.jpg",
+    image: "./bellavita.png",
     // link: "/project2",
   },
   {
     title: "Project 3",
     description: "A brief description of Project 3.",
-    image: "./bellavita.png",
+    image: "./passwordApp.png",
     // link: "/project3",
   },
 ];
