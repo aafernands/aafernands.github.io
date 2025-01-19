@@ -67,7 +67,7 @@ const plans = [
 				title: "Delivery: 1-2 weeks",
 				description:
 					"We guarantee a quick turnaround time, delivering your website within 1-2 weeks.",
-				icon: faBusinessTime,
+				icon: faTruck,
 			},
 		],
 	},
@@ -112,7 +112,7 @@ const plans = [
 				title: "Delivery: 2-3 weeks",
 				description:
 					"Standard plan offers slightly more customization with delivery in 2-3 weeks.",
-				icon: faBusinessTime,
+				icon: faTruck,
 			},
 		],
 	},
@@ -181,7 +181,7 @@ const plans = [
 				title: "Delivery: 3-4 weeks",
 				description:
 					"Premium plan includes more advanced features with a 3-4 week delivery time.",
-				icon: faEnvelope,
+				icon: faTruck,
 			},
 		],
 	},
@@ -254,7 +254,7 @@ const Pricing = () => {
 								</Typography>
 							</Box>
 							<CardContent className={styles.cardContent}>
-								<Typography variant="body2" align="center" gutterBottom>
+								<Typography variant="body2" align="left" gutterBottom>
 									{plan.targetAudience}
 								</Typography>
 								<List>
