@@ -1,97 +1,48 @@
-/* Services Page Styles */
-.servicesSection {
-	padding: 3rem 1rem;
-	text-align: center;
-	color: var(--foreground); /* Text color based on theme */
-	min-height: 100vh; /* Ensure the section covers the full viewport height */
-	background-color: var(--background); /* Dark background based on theme */
-	display: flex;
-	justify-content: flex-start; /* Align content to the top */
-	flex-direction: column;
-	position: relative;
+.servicesContainer {
+	padding: 40px;
+	background-color: #f5f5f5;
   }
   
-  .title {
-	font-size: 2.5rem;
-	font-weight: bold;
-	margin-bottom: 1rem;
-	text-align: left;
-	padding: 20px;
-	font-family: "Roboto", sans-serif;
-	color: var(--foreground); /* Title color based on theme */
-  }
-  
-  .description {
-	font-size: 1.2rem;
-	margin-bottom: 2rem;
-	color: var(--foreground-secondary); /* Light gray for description */
-	text-align: left;
-  }
-  
-  .page {
+  .serviceCard {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 40px;
-	background-color: var(--background-light); /* Light background based on theme */
-  }
-  
-  .main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-  }
-  
-  .introText {
-	font-size: 1.2rem;
-	margin-bottom: 20px;
-	color: var(--foreground); /* Dark gray text based on theme */
-  }
-  
-  .reviewsList {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	max-width: 800px;
-  }
-  
-  .reviewsItem {
-	background-color: var(--review-bg); /* Light gray for review items based on theme */
 	padding: 20px;
-	border-radius: 8px;
-	margin-bottom: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	position: relative;
   }
   
-  .reviewsItem blockquote {
-	font-size: 1.1rem;
-	font-style: italic;
-	color: var(--foreground); /* Dark gray for quotes based on theme */
+  .serviceCard:hover {
+	transform: scale(1.05);
+  }
+  
+  .icon {
+	font-size: 3rem;
+	color: #1976d2;
 	margin-bottom: 10px;
   }
   
-  .reviewsItem p {
+  .serviceName {
+	font-size: 1.2rem;
 	font-weight: bold;
-	color: var(--foreground); /* Dark gray for bold text based on theme */
-  }
-  
-  .reviewLink {
-	display: inline-block;
-	margin-top: 10px;
-	color: var(--button-primary-hover); /* Blue for links based on theme */
-	text-decoration: none;
-  }
-  
-  .reviewLink:hover {
-	text-decoration: underline;
+	color: #333;
   }
   
   @media (max-width: 600px) {
-	.reviewsItem {
-	  padding: 0 16px;
+	.serviceCard {
+	  padding: 15px;
+	}
+  
+	.icon {
+	  font-size: 2.5rem;
+	}
+  
+	.serviceName {
+	  font-size: 1rem;
 	}
   }
   

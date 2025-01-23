@@ -1,53 +1,37 @@
-"use client";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaintRoller, faBoltLightning, faShieldAlt, faEnvelope, faTruck } from "@fortawesome/free-solid-svg-icons";
+import { Box, Typography, Grid, Paper } from "@mui/material";
+import styles from "../styles/servicesSection.module.css";  // Make sure to add this CSS file
 
-import React, { useState, useEffect } from "react";
-import {
-	Container,
-	Typography,
-	Button,
-	Box,
-	Grid,
-	IconButton,
-} from "@mui/material";
-import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import styles from "../styles/servicesSection.module.css"; // Import the CSS module
+const services = [
+  { name: "Custom Design", icon: faPaintRoller },
+  { name: "High-Speed Hosting", icon: faBoltLightning },
+  { name: "SSL & Security", icon: faShieldAlt },
+  { name: "Email Support", icon: faEnvelope },
+  { name: "Fast Delivery", icon: faTruck },
+];
 
-const PortfolioSection = () => {
-	const [currentSlide, setCurrentSlide] = useState(0);
-
-	return (
-		<Container id="reviews" className={styles.servicesSection}>
-			<Typography variant="h4" className={styles.title}>
-				services
-			</Typography>
-			<Typography variant="body1" className={styles.description}>
-			See what our customers are saying about us!
-			</Typography>
-			<section className={styles.section}>
-					<h2>Features We Offer</h2>
-					<ul>
-						<li>
-							<strong>Responsive Design:</strong> Websites that look and work
-							perfectly on all devices.
-						</li>
-						<li>
-							<strong>SEO Optimization:</strong> Be found by the people who
-							matter most.
-						</li>
-						<li>
-							<strong>Custom Integrations:</strong> From e-commerce to
-							analytics, we make it happen.
-						</li>
-						<li>
-							<strong>Ongoing Support:</strong> We’re here for you, even after
-							launch.
-						</li>
-					</ul>
-					<button className={styles.ctaButton}>Explore Our Services</button>
-				</section>
-		
-		</Container>
-	);
+const Services = () => {
+  return (
+    <Box className={styles.servicesContainer}>
+      <Typography variant="h2" align="center" gutterBottom>
+        Our Services
+      </Typography>
+      <Grid container spacing={2} justifyContent="center">
+        {services.map((service, index) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Paper className={styles.serviceCard} elevation={3}>
+              <FontAwesomeIcon icon={service.icon} className={styles.icon} />
+              <Typography variant="h6" className={styles.serviceName}>
+                {service.name}
+              </Typography>
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  );
 };
 
-export default PortfolioSection;
+export default Services;

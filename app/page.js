@@ -5,6 +5,7 @@ import UnderConstruction from "../components/UnderConstruction";
 import HeroSection from "../components/HeroSection.js";
 import PortfolioSection from "../components/PortfolioSection.js";
 import ReviewsSection from "../components/ReviewsSection.js";
+import Services from "../components/ServicesSection";
 // import ServicesSection from "../components/ServicesSection.js";
 import FrequentQuestionsSection from "../components/FrequentQuestionsSection.js";
 import { Container } from "@mui/material";
@@ -17,8 +18,8 @@ export default function Home() {
     <Container >
       <HeroSection />
       <PortfolioSection />
-      <ReviewsSection />
-      {/* <ServicesSection /> */}
+      <ReviewsSection />      
+      <Services />
       <FrequentQuestionsSection />
     </Container>
   );
