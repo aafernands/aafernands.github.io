@@ -97,3 +97,53 @@
   color: #388e3c; /* Green for success messages */
   text-align: center;
 }
+
+
+.contactInfo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactInfo h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contactInfo p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.map {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.socialMedia a {
+  color: #1976d2;
+  font-size: 2rem;
+}
+
+.socialMedia a:hover {
+  color: #115293;
+}
+
+.successMessage {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #388e3c;
+  text-align: center;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+}

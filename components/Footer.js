@@ -18,6 +18,7 @@ const Footer = () => {
 
   return (
     <Box
+      className={styles.footer}
       sx={{
         backgroundColor: "white", // Set a fixed background color
         color: "#000000", // Set fixed text color
@@ -54,7 +55,7 @@ const Footer = () => {
                 aria-label={item.name}
                 style={{
                   cursor: "pointer",
-                  color: "#1976d2", // Set fixed link color
+                  color: "#171717", // Set fixed link color
                 }}
               >
                 {item.name}
@@ -70,7 +71,7 @@ const Footer = () => {
           href="https://www.facebook.com/fndslabs/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#1976d2" }} // Set fixed icon color
+          style={{ color: "#171717" }} // Set fixed icon color
         >
           <Facebook className={styles.icon} />
         </a>
@@ -78,7 +79,7 @@ const Footer = () => {
           href="https://www.instagram.com/fnds.labs"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#1976d2" }} // Set fixed icon color
+          style={{ color: "#171717" }} // Set fixed icon color
         >
           <Instagram className={styles.icon} />
         </a>
