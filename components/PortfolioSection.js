@@ -14,21 +14,36 @@ import styles from "../styles/portfolioSection.module.css"; // Import the CSS mo
 const projects = [
   {
     title: "Bella Vita Ristorante",
-    description: "A responsive website for an authentic Italian restaurant, showcasing the menu, story, and reservation options with a modern, user-friendly design.",
+    description:
+      "A responsive website for an authentic Italian restaurant, showcasing the menu, story, and reservation options with a modern, user-friendly design.",
     image: "./project1.png", // Replace with actual image paths
-    link: "/project1",
+    liveDemo: "https://bella-vita-demo.com",
+    githubLink: "https://github.com/aafernands/bella-vita",
+    technologies: ["React", "Material UI", "Node.js", "Next.js"],
+    tags: ["Responsive", "E-commerce"],
+    date: "January 2025",
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2.",
+    title: "WeatherApp",
+    description:
+      "A simple and intuitive web application for checking the weather in any city worldwide.",
     image: "./project2.png",
-    link: "/project2",
+    liveDemo: "https://weatherapp-demo.com",
+    githubLink: "https://github.com/aafernands/weatherapp",
+    technologies: ["JavaScript", "Bootstrap", "API Integration"],
+    tags: ["API", "Utility"],
+    date: "December 2024",
   },
   {
-    title: "Project 3",
-    description: "A brief description of Project 3.",
+    title: "Realtor App",
+    description:
+      "A real estate app to browse and save properties, featuring user authentication and favorite listings.",
     image: "./project3.png",
-    link: "/project3",
+    liveDemo: "https://realtorapp-demo.com",
+    githubLink: "https://github.com/aafernands/realtorapp",
+    technologies: ["React", "MongoDB", "JWT"],
+    tags: ["Full Stack", "Authentication"],
+    date: "November 2024",
   },
 ];
 
@@ -50,6 +65,7 @@ const PortfolioSection = () => {
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Card
                 sx={{
+                  bgcolor: "white",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
@@ -67,12 +83,85 @@ const PortfolioSection = () => {
                   height="200"
                   image={project.image}
                   alt={project.title}
-                  sx={{ objectFit: "contain", borderRadius: 1, padding: "10px" }}
+                  sx={{
+                    objectFit: "contain",
+                    borderRadius: 1,
+                    padding: "10px",
+                    margin: "10px",
+                  }}
                 />
                 <CardContent sx={{ textAlign: "center" }}>
                   <Typography variant="h6">{project.title}</Typography>
                   <Typography variant="body2" color="text.secondary">
                     {project.description}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ marginTop: "10px" }}
+                  >
+                                          <br></br>
+
+                    <strong>Technologies:</strong> {project.technologies.join(", ")}
+                  </Typography>
+                  <br></br>
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: "5px",
+                      flexWrap: "wrap",
+                      marginTop: "10px",
+                    }}
+                  >
+                    {project.tags.map((tag, i) => (
+                      <Box
+                        key={i}
+                        sx={{
+                          backgroundColor: "#f0f0f0",
+                          borderRadius: "12px",
+                          padding: "5px 10px",
+                          fontSize: "0.8rem",
+                        }}
+                      >
+                        {tag}
+                      </Box>
+                    ))}
+                  </Box>
+                  <br></br>
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      marginTop: "10px",
+                    }}
+                  >
+                    <Button
+                      href={project.liveDemo}
+                      target="_blank"
+                      variant="contained"
+                      size="small"
+                      sx={{ margin: "5px" }}
+                    >
+                      Live Demo
+                    </Button>
+                    <Button
+                      href={project.githubLink}
+                      target="_blank"
+                      variant="outlined"
+                      size="small"
+                      sx={{ margin: "5px" }}
+                    >
+                      GitHub
+                    </Button>
+                  </Box>
+                  <Typography
+                    variant="caption"
+                    color="text.secondary"
+                    sx={{ marginTop: "10px" }}
+                  >
+                    Last Updated: {project.date}
                   </Typography>
                 </CardContent>
               </Card>
