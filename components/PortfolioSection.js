@@ -17,7 +17,7 @@ const projects = [
     description:
       "A responsive website for an authentic Italian restaurant, showcasing the menu, story, and reservation options with a modern, user-friendly design.",
     image: "./project1.png", // Replace with actual image paths
-    liveDemo: "bella-vitta-restaurant-ezb7ghnzc-aafernands-projects.vercel.app",
+    liveDemo: "https://vercel.com/aafernands-projects/bella-vitta-restaurant/2qrMUX5vPPjs52NoJotGV3YBdTsp",
     githubLink: "https://github.com/aafernands/bella-vitta-restaurant",
     technologies: ["React", "Material UI", "Node.js", "Next.js"],
     tags: ["Responsive", "E-commerce"],
