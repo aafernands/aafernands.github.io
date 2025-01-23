@@ -17,24 +17,28 @@ import styles from "../styles/reviewsSection.module.css";
 
 const reviews = [
   {
-    text: "Working with Alex was an absolute pleasure. He delivered a high-quality website for our cleaning business that exceeded our expectations. The process was smooth, and Alex was always responsive and open to feedback. Highly recommend his services!",
-    author: "John D., New Shine Pro",
+    text: "Alex was an absolute pleasure to work with. His attention to detail and ability to deliver high-quality results are unmatched. Highly recommend his services!",
+    author: "John D.",
     link: "#",
+    image: "./john.png", // Path to the image
   },
   {
-    text: "I was impressed with how quickly Alex created a weather app for our project. He took the time to understand our needs and delivered an intuitive and visually appealing solution. The app works flawlessly, and the user interface is simple yet effective.",
-    author: "Sarah L., WeatherApp",
+    text: "I was impressed with Alex's ability to understand our needs and deliver an intuitive and visually appealing solution. The process was seamless, and the results were outstanding.",
+    author: "Sarah L.",
     link: "#",
+    image: "./sarah.png", // Path to the image
   },
   {
-    text: "Alex helped us develop a real estate app that allows users to search for properties effortlessly. His expertise in React and MongoDB was evident throughout the project. The app is fast, responsive, and easy to navigate.",
-    author: "Michael R., Realtor App",
+    text: "Alex's expertise and dedication were evident throughout the project. He delivered a fast, responsive, and easy-to-navigate solution that exceeded our expectations.",
+    author: "Michael R.",
     link: "#",
+    image: "./michael.png", // Path to the image
   },
   {
-    text: "Alex is a fantastic web developer who truly understands the needs of his clients. He built a stunning portfolio site for me that not only looks great but is also easy to navigate. Highly recommend his services!",
-    author: "[Your Name], Portfolio Client",
+    text: "Alex is a fantastic developer who truly understands the needs of his clients. He created a stunning and user-friendly solution for us. Highly recommend his services!",
+    author: "Emily W.",
     link: "#",
+    image: "./emily.png", // Path to the image
   },
 ];
 
@@ -53,8 +57,10 @@ const PortfolioSection = () => {
             <Card className={styles.card}>
               <CardHeader
                 avatar={
-                  <Avatar>
-                    <FontAwesomeIcon icon={faUserCircle} size="2x" />
+                  <Avatar src={review.image} alt={review.author}>
+                    {!review.image && (
+                      <FontAwesomeIcon icon={faUserCircle} size="2x" />
+                    )}
                   </Avatar>
                 }
                 title={
@@ -74,12 +80,12 @@ const PortfolioSection = () => {
                 }
               />
               <CardContent>
-                <Typography variant="body2" color="textSecondary">
+                <Typography variant="body2" color="text.secondary">
                   {review.text}
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  color="textPrimary"
+                  color="text.primary"
                   sx={{ marginTop: 1 }}
                 >
                   {review.author}
