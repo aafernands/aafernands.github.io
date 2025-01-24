@@ -2,12 +2,11 @@
 
 // layout.js
 import { ThemeProvider, CssBaseline, Container } from "@mui/material";
-import { lightTheme } from "../themes"; // Import the light theme
-import { Roboto, Montserrat } from "next/font/google"; // Import fonts
-import Navbar from "../components/NavBar"; // Your Navbar component
-import Footer from "../components/Footer"; // Your Footer component
+import { lightTheme } from "../themes"; 
+import { Roboto, Montserrat } from "next/font/google"; 
+import Navbar from "../components/NavBar"; 
+import Footer from "../components/Footer"; 
 
-// Import fonts
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 const montserrat = Montserrat ({ subsets: ["latin"], weight: ["400", "700"] });
 
