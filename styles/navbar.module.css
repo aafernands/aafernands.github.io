@@ -38,7 +38,7 @@
 	color: black; /* Fixed text color */
 	text-decoration: none;
 	font-size: 1.3rem;
-	font-weight: 600;
+	font-weight: 500;
   }
   
   .navLinks a:hover {
@@ -96,7 +96,7 @@
   
   .logoImage {
 	height: auto;
-	max-height: 5rem;
+	max-height: 3rem;
 	width: auto;
 	max-width: 200px;
 	padding: 0;
