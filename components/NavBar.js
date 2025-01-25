@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Drawer, IconButton, AppBar, Toolbar } from "@mui/material";
+import { Box, Drawer, IconButton, AppBar, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import styles from "../styles/navbar.module.css";
 
 export default function Navbar() {
@@ -25,7 +27,8 @@ export default function Navbar() {
         sx={{
           backgroundColor: "white",
           color: "#000000",
-          padding: "10px",
+          marginLeft: "20px",
+          padding: "20px",
           textAlign: "center",
         }}
         className={styles.toolbar}
@@ -34,7 +37,7 @@ export default function Navbar() {
           <a onClick={() => handleNavigation("/")} style={{ cursor: "pointer" }}>
             <img
               src="../logo.png"
-              alt="FNDS Labs Logo"
+              alt="ALX Web Dev Logo"
               className={styles.logoImage}
             />
           </a>
@@ -62,7 +65,7 @@ export default function Navbar() {
         </ul>
 
         <IconButton className={styles.menuIcon} onClick={toggleDrawer}>
-          <MenuIcon sx={{ color: "#000000", fontSize: "2.5rem" }} />
+          <MenuIcon sx={{ marginRight: "5px", color: "#000000", fontSize: "2.5rem" }} />
         </IconButton>
       </Toolbar>
 
@@ -85,9 +88,22 @@ export default function Navbar() {
                 >
                   {item.name}
                 </a>
+                <hr style={{ border: "0.1px solid #272727", margin: "8px 0" }} />
               </li>
             ))}
           </ul>
+
+          <Box style={{ marginTop: "auto", padding: "16px", textAlign: "center" }}>
+            <a href="https://facebook.com/alxwebdev" target="_blank" rel="noopener noreferrer">
+              <FacebookIcon sx={{ fontSize: "2rem", margin: "0 8px", color: "white" }} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon sx={{ fontSize: "2rem", margin: "0 8px", color: "white" }} />
+            </a>
+            <p style={{ marginTop: "8px", fontSize: "0.9rem", color: "#666" }}>
+              contact@alxwebdev
+            </p>
+          </Box>
         </div>
       </Drawer>
     </AppBar>
