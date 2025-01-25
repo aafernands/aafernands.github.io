@@ -29,7 +29,7 @@ const Footer = () => {
 				<Link href="/" passHref>
 					<Box
 						component="img"
-						src="../logoWhite.png"
+						src="../logo.png"
 						alt="FNDS Labs Logo"
 						sx={{
 							maxWidth: "150px",
@@ -43,6 +43,8 @@ const Footer = () => {
 					display: "flex",
 					justifyContent: "center",
 					padding: "0px",
+					margin: "0px",
+					marginLeft: "-25px",
 				}}
 			>
 				<List
