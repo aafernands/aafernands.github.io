@@ -25,7 +25,7 @@ export default function Navbar() {
         sx={{
           backgroundColor: "white",
           color: "#000000",
-          padding: "20px",
+          padding: "10px",
           textAlign: "center",
         }}
         className={styles.toolbar}
@@ -62,7 +62,7 @@ export default function Navbar() {
         </ul>
 
         <IconButton className={styles.menuIcon} onClick={toggleDrawer}>
-          <MenuIcon sx={{ color: "#000000" }} />
+          <MenuIcon sx={{ color: "#000000", fontSize: "2.5rem" }} />
         </IconButton>
       </Toolbar>
 
