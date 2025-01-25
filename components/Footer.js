@@ -29,7 +29,7 @@ const Footer = () => {
 				<Link href="/" passHref>
 					<Box
 						component="img"
-						src="../logowhite.png"
+						src="../logo.png"
 						alt="FNDS Labs Logo"
 						sx={{
 							maxWidth: "150px",
