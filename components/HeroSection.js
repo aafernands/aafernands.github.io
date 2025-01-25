@@ -1,14 +1,11 @@
 import React from "react";
 import {
-	AppBar,
-	Toolbar,
 	Typography,
 	Button,
 	Container,
 	Grid,
 	Box,
 } from "@mui/material";
-import Link from "next/link";
 import { useTheme } from "@mui/material/styles";
 
 import styles from "../styles/HeroSection.module.css";
@@ -17,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
-	const theme = useTheme(); // Access the theme
+	const theme = useTheme();
 
 	return (
 		<div className={styles.mainContainer}>
@@ -30,11 +27,11 @@ const HeroSection = () => {
 							margin: "0rem",
 							fontWeight: 700,
 							fontSize: {
-								xs: "2.5rem", // Extra small screens
-								sm: "3rem", // Small screens
-								md: "3.5rem", // Medium screens
-								lg: "4rem", // Large screens
-								xl: "5rem", // Extra large screens
+								xs: "2.5rem",
+								sm: "3rem",
+								md: "3.5rem",
+								lg: "4rem",
+								xl: "5rem",
 							},
 						}}
 					>
@@ -42,15 +39,6 @@ const HeroSection = () => {
 						<span className={styles.highlight}>creative and innovative</span>{" "}
 						solutions!
 					</Typography>
-				</Box>
-				<Box className={styles.imageContainer}>
-					<Link href="/">
-						{/* <img
-							src="./largeHero.png" // Ensure the image path is correct
-							alt="Hero Image"
-							className={styles.heroImage}
-						/> */}
-					</Link>
 				</Box>
 			</Container>
 

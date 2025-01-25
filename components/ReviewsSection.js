@@ -20,25 +20,25 @@ const reviews = [
     text: "Alex was an absolute pleasure to work with. His attention to detail and ability to deliver high-quality results are unmatched. Highly recommend his services!",
     author: "John D.",
     link: "#",
-    image: "./john.png", // Path to the image
+    image: "./john.png",
   },
   {
     text: "I was impressed with Alex's ability to understand our needs and deliver an intuitive and visually appealing solution. The process was seamless, and the results were outstanding.",
     author: "Sarah L.",
     link: "#",
-    image: "./sarah.png", // Path to the image
+    image: "./sarah.png",
   },
   {
     text: "Alex's expertise and dedication were evident throughout the project. He delivered a fast, responsive, and easy-to-navigate solution that exceeded our expectations.",
     author: "Michael R.",
     link: "#",
-    image: "./michael.png", // Path to the image
+    image: "./michael.png",
   },
   {
     text: "Alex is a fantastic developer who truly understands the needs of his clients. He created a stunning and user-friendly solution for us. Highly recommend his services!",
     author: "Emily W.",
     link: "#",
-    image: "./emily.png", // Path to the image
+    image: "./emily.png",
   },
 ];
 

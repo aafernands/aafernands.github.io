@@ -58,8 +58,6 @@ const PortfolioSection = () => {
           Explore some of our creative and innovative projects. Each project is
           designed with care and attention to detail.
         </Typography>
-
-        {/* Grid for Responsive Layout */}
         <Grid container spacing={3}>
           {projects.map((project, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
@@ -169,8 +167,6 @@ const PortfolioSection = () => {
           ))}
         </Grid>
       </Container>
-
-      {/* Button Outside the Container */}
       <Box
         sx={{
           display: "flex",

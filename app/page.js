@@ -9,16 +9,16 @@ import FrequentQuestionsSection from "../components/FrequentQuestionsSection.js"
 import { Container } from "@mui/material";
 
 export default function Home() {
-  if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
-    return <UnderConstruction />;
-  }
-  return (
-    <Container >
-      <HeroSection />
-      <PortfolioSection />
-      <ReviewsSection />      
-      <Services />
-      <FrequentQuestionsSection />
-    </Container>
-  );
+	if (process.env.SHOW_UNDER_CONSTRUCTION === "true") {
+		return <UnderConstruction />;
+	}
+	return (
+		<Container>
+			<HeroSection />
+			<PortfolioSection />
+			<ReviewsSection />
+			<Services />
+			<FrequentQuestionsSection />
+		</Container>
+	);
 }

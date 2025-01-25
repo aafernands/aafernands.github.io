@@ -1,7 +1,7 @@
 
 
 .main {
-  margin-top: 2rem; /* Adds margin to the top to separate it from the header */
+  margin-top: 2rem; 
 }
 
 .section {
@@ -10,19 +10,19 @@
 
 .section h2 {
   font-size: 2rem;
-  color: var(--foreground);  /* Use theme-based foreground color */
+  color: var(--foreground);  
   margin-bottom: 1rem;
 }
 
 .section ul, .section ol {
   padding-left: 1.5rem;
-  color: var(--foreground);  /* Use theme-based foreground color */
+  color: var(--foreground); 
   line-height: 1.6;
 }
 
 .ctaButton {
-  background-color: var(--button-bg);  /* Yellow button background */
-  color: var(--foreground);  /* Text color based on theme */
+  background-color: var(--button-bg); 
+  color: var(--foreground);  
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -32,5 +32,5 @@
 }
 
 .ctaButton:hover {
-  background-color: var(--button-hover-bg);  /* Hover effect for button */
+  background-color: var(--button-hover-bg);  
 }

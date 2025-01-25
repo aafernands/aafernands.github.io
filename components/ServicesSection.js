@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintRoller, faBoltLightning, faShieldAlt, faEnvelope, faTruck } from "@fortawesome/free-solid-svg-icons";
 import { Box, Typography, Grid, Paper } from "@mui/material";
-import styles from "../styles/servicesSection.module.css";  // Make sure to add this CSS file
+import styles from "../styles/servicesSection.module.css";
 
 const services = [
   { name: "Custom Design", icon: faPaintRoller },

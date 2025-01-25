@@ -1,6 +1,8 @@
+"use client"
+
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Button, Drawer, IconButton, AppBar, Toolbar } from "@mui/material";
+import { Drawer, IconButton, AppBar, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "../styles/navbar.module.css";
 
@@ -13,33 +15,31 @@ export default function Navbar() {
   };
 
   const handleNavigation = (path) => {
-    setOpen(false); // Close the drawer
-    router.push(path); // Navigate to the path
+    setOpen(false);
+    router.push(path);
   };
 
   return (
     <AppBar position="fixed" className={styles.appbar}>
       <Toolbar
         sx={{
-          backgroundColor: "white", // Fixed background color
-          color: "#000000", // Fixed text color
+          backgroundColor: "white",
+          color: "#000000",
           padding: "20px",
           textAlign: "center",
         }}
         className={styles.toolbar}
       >
-        {/* Logo */}
         <div className={styles.logo}>
           <a onClick={() => handleNavigation("/")} style={{ cursor: "pointer" }}>
             <img
-              src="../logoWhite.png" // Fixed logo
+              src="../logoWhite.png"
               alt="FNDS Labs Logo"
               className={styles.logoImage}
             />
           </a>
         </div>
 
-        {/* Desktop Menu */}
         <ul className={styles.navLinks}>
           {[
             { name: "Home", path: "/" },
@@ -61,13 +61,11 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile Menu Icon */}
         <IconButton className={styles.menuIcon} onClick={toggleDrawer}>
           <MenuIcon sx={{ color: "#000000" }} />
         </IconButton>
       </Toolbar>
 
-      {/* Mobile Drawer */}
       <Drawer anchor="left" open={open} onClose={toggleDrawer}>
         <div className={styles.drawerMenu}>
           <ul>
