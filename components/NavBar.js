@@ -101,7 +101,7 @@ export default function Navbar() {
               <InstagramIcon sx={{ fontSize: "2rem", margin: "0 8px", color: "white" }} />
             </a>
             <p style={{ marginTop: "8px", fontSize: "0.9rem", color: "#666" }}>
-              contact@alxwebdev
+              alx@webdevlopment.com
             </p>
           </Box>
         </div>
